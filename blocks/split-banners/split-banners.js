@@ -2,11 +2,37 @@
  * split-banners — Two equal-width 60vh image banners side by side.
  *
  * Authoring rows (one row per banner):
- *   cell 0: <picture> image
+ *   cell 0: <picture> image OR plain text URL
  *   cell 1: heading / title
  *   cell 2: CTA link — wrap in <strong>
  */
+
+/**
+ * Convert plain-text image URLs in cells to <img> elements.
+ * Supports both DA-editor authored content (picture elements) and
+ * programmatic uploads (text URLs).
+ */
+function convertTextToImages(block) {
+  block.querySelectorAll(':scope > div > div').forEach((cell) => {
+    if (cell.querySelector('picture, img')) return;
+    const text = cell.textContent.trim();
+    if (
+      text.match(/^https?:\/\/.+\.(jpg|jpeg|png|gif|webp|svg)/i)
+      || text.match(/^https?:\/\/.*\/(dw|image|media)\//i)
+    ) {
+      const img = document.createElement('img');
+      img.src = text;
+      img.alt = '';
+      img.loading = 'lazy';
+      cell.textContent = '';
+      cell.appendChild(img);
+    }
+  });
+}
+
 export default async function decorate(block) {
+  convertTextToImages(block);
+
   const rows = [...block.children];
   if (!rows.length) return;
 

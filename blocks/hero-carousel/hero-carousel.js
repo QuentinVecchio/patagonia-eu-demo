@@ -2,12 +2,38 @@
  * hero-carousel — Full-viewport hero with auto-advancing slides.
  *
  * Authoring rows (one row per slide):
- *   cell 0: <picture> slide image
+ *   cell 0: <picture> slide image OR plain text URL
  *   cell 1: slide title (h1 or p)
  *   cell 2: optional body text
  *   cell 3: CTA link — wrap in <strong> for primary pill button
  */
+
+/**
+ * Convert plain-text image URLs in cells to <img> elements.
+ * Supports both DA-editor authored content (picture elements) and
+ * programmatic uploads (text URLs).
+ */
+function convertTextToImages(block) {
+  block.querySelectorAll(':scope > div > div').forEach((cell) => {
+    if (cell.querySelector('picture, img')) return; // already has image
+    const text = cell.textContent.trim();
+    if (
+      text.match(/^https?:\/\/.+\.(jpg|jpeg|png|gif|webp|svg)/i)
+      || text.match(/^https?:\/\/.*\/(dw|image|media)\//i)
+    ) {
+      const img = document.createElement('img');
+      img.src = text;
+      img.alt = '';
+      img.loading = 'lazy';
+      cell.textContent = '';
+      cell.appendChild(img);
+    }
+  });
+}
+
 export default async function decorate(block) {
+  convertTextToImages(block);
+
   const rows = [...block.children];
   if (!rows.length) return;
 

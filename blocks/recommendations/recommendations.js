@@ -3,8 +3,37 @@
  *
  * Authoring rows:
  *   row 0: section heading (optional, single cell)
- *   rows 1+: product card — 4 cells: <picture>, name, color, price
+ *   rows 1+: product card — 4 cells: <picture> OR text URL, name, color, price
+ *
+ * Note: image cell may contain <a href="..."><picture>...</picture></a>
+ * or <a href="..."><p>URL</p></a> — link is extracted before image conversion.
  */
+
+/**
+ * Convert plain-text image URLs in cells to <img> elements.
+ * Supports both DA-editor authored content (picture elements) and
+ * programmatic uploads (text URLs).
+ * NOTE: clears cell content, so extract links BEFORE calling this.
+ */
+function convertTextToImages(block) {
+  block.querySelectorAll(':scope > div > div').forEach((cell) => {
+    if (cell.querySelector('picture, img')) return;
+    // Get text from deepest text node (handles <a><p>URL</p></a> wrapper)
+    const text = cell.textContent.trim();
+    if (
+      text.match(/^https?:\/\/.+\.(jpg|jpeg|png|gif|webp|svg)/i)
+      || text.match(/^https?:\/\/.*\/(dw|image|media)\//i)
+    ) {
+      const img = document.createElement('img');
+      img.src = text;
+      img.alt = '';
+      img.loading = 'lazy';
+      cell.textContent = '';
+      cell.appendChild(img);
+    }
+  });
+}
+
 export default async function decorate(block) {
   const rows = [...block.children];
   if (!rows.length) return;
@@ -16,6 +45,15 @@ export default async function decorate(block) {
     heading = rows[0].textContent.trim();
     cardRows = rows.slice(1);
   }
+
+  // Extract links from image cells BEFORE convertTextToImages clears them
+  const cardLinks = cardRows.map((row) => {
+    const cells = [...row.children];
+    const link = cells[0]?.querySelector('a') || cells[1]?.querySelector('a');
+    return link?.href || '#';
+  });
+
+  convertTextToImages(block);
 
   const inner = document.createElement('div');
   inner.className = 'rec-inner';
@@ -29,14 +67,13 @@ export default async function decorate(block) {
   const grid = document.createElement('div');
   grid.className = 'rec-grid';
 
-  cardRows.forEach((row) => {
+  cardRows.forEach((row, idx) => {
     const cells = [...row.children];
     const pic = cells[0]?.querySelector('picture, img');
     const name = cells[1]?.textContent?.trim() || '';
     const color = cells[2]?.textContent?.trim() || '';
     const priceText = cells[3]?.textContent?.trim() || '';
-    const link = cells[0]?.querySelector('a') || cells[1]?.querySelector('a');
-    const href = link?.href || '#';
+    const href = cardLinks[idx];
 
     const card = document.createElement('a');
     card.href = href;

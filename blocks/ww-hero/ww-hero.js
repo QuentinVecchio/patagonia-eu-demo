@@ -2,11 +2,37 @@
  * ww-hero — Worn Wear full-height hero with brand brown bg + logo overlay.
  *
  * Authoring rows:
- *   row 0: background <picture> image
- *   row 1: logo <picture> or text
+ *   row 0: background <picture> image OR plain text URL
+ *   row 1: logo <picture> OR plain text URL OR text
  *   row 2: tagline paragraph
  */
+
+/**
+ * Convert plain-text image URLs in cells to <img> elements.
+ * Supports both DA-editor authored content (picture elements) and
+ * programmatic uploads (text URLs).
+ */
+function convertTextToImages(block) {
+  block.querySelectorAll(':scope > div > div').forEach((cell) => {
+    if (cell.querySelector('picture, img')) return;
+    const text = cell.textContent.trim();
+    if (
+      text.match(/^https?:\/\/.+\.(jpg|jpeg|png|gif|webp|svg)/i)
+      || text.match(/^https?:\/\/.*\/(dw|image|media)\//i)
+    ) {
+      const img = document.createElement('img');
+      img.src = text;
+      img.alt = '';
+      img.loading = 'lazy';
+      cell.textContent = '';
+      cell.appendChild(img);
+    }
+  });
+}
+
 export default async function decorate(block) {
+  convertTextToImages(block);
+
   const rows = [...block.children];
   if (!rows.length) return;
 
