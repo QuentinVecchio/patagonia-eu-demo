@@ -172,3 +172,13 @@
     padding-top: 12px;
   }
 }
+
+/* Brand logo */
+.nav-brand-logo {
+  display: flex;
+  align-items: center;
+}
+.nav-brand-logo svg {
+  width: 140px;
+  height: auto;
+}
