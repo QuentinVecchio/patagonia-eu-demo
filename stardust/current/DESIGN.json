@@ -1,0 +1,103 @@
+{
+  "_meta": {
+    "site": "eu.patagonia.com",
+    "extractedAt": "2026-05-22T13:58:00.000Z",
+    "phase": "current-state",
+    "pagesAnalyzed": 3
+  },
+  "colors": {
+    "text": "#000000",
+    "background": "#FFFFFF",
+    "surface": "#F5F5F5",
+    "primary": "#27455C",
+    "secondary": "#466254",
+    "accent": "#B46E58",
+    "warmSurface": "#F5F0E0",
+    "mutedText": "#555555",
+    "darkSurface": "#333333"
+  },
+  "typography": {
+    "headingFamily": "\"Ridgeway Sans\", system-ui, sans-serif",
+    "bodyFamily": "\"Ridgeway Sans\", system-ui, sans-serif",
+    "serifFamily": "\"Copernicus\", Georgia, serif",
+    "scale": {
+      "h2": { "size": "48px", "weight": 500, "lineHeight": "1.1", "letterSpacing": "-0.02em" },
+      "h3": { "size": "40px", "weight": 500, "lineHeight": "1.1", "letterSpacing": "-0.02em" },
+      "h4": { "size": "14px", "weight": 500, "lineHeight": "1.5" },
+      "body": { "size": "16px", "weight": 400, "lineHeight": "1.5" },
+      "small": { "size": "12px", "weight": 300, "lineHeight": "1.4" }
+    }
+  },
+  "rounded": {
+    "none": "0px",
+    "sm": "4px",
+    "card": "8px",
+    "badge": "17px",
+    "pill": "30px",
+    "full": "50%",
+    "signature": "0px"
+  },
+  "spacing": {
+    "sectionVertical": "64px",
+    "sectionHorizontal": "48px",
+    "cardGap": "16px",
+    "maxWidth": "1440px"
+  },
+  "components": {
+    "button": {
+      "primary": {
+        "background": "#000000",
+        "color": "#FFFFFF",
+        "borderRadius": "0px",
+        "padding": "12px 24px",
+        "fontSize": "14px",
+        "fontWeight": 500
+      },
+      "activist": {
+        "background": "#FFFFFF",
+        "color": "#000000",
+        "borderRadius": "30px",
+        "padding": "5px 20px",
+        "fontSize": "12px",
+        "fontWeight": 500,
+        "border": "1px solid rgba(0,0,0,0)"
+      }
+    }
+  },
+  "extensions": {
+    "componentStyle": "utilitarian-outdoors",
+    "motifs": [
+      "sharp-square-corners",
+      "earth-palette",
+      "mission-and-commerce-coequal",
+      "editorial-photography",
+      "activist-cta-overlays"
+    ],
+    "voice": [
+      "direct",
+      "mission-driven",
+      "nature-connected",
+      "anti-disposable",
+      "activist"
+    ],
+    "productFocus": {
+      "flagship": "Nano Puff® Jacket",
+      "category": "Outdoor Performance Insulation",
+      "demoPersona": "Mia Kessler — 32, Munich, hiker/climber",
+      "keyMessages": [
+        "Weather-resistant synthetic insulation stays warm when wet",
+        "60-g PrimaLoft® Gold Insulation Eco with P.U.R.E.™ technology",
+        "100% recycled fabrics — shell, lining, and insulation",
+        "Fair Trade Certified™ factory",
+        "Packable, lightweight — the 'magic jacket' for any outdoor pursuit"
+      ]
+    },
+    "brandValues": [
+      "Environmental activism",
+      "Product durability and longevity (Worn Wear, Ironclad Guarantee)",
+      "Fair Trade and ethical manufacturing",
+      "1% for the Planet",
+      "Repair culture over replace culture"
+    ]
+  }
+}

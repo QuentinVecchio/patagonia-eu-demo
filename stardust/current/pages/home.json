@@ -1,0 +1,49 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-05-22T13:50:00.000Z",
+    "waitMs": 4000,
+    "waitMode": "medium",
+    "httpStatus": 200,
+    "url": "https://eu.patagonia.com/gb/en/home/",
+    "slug": "home"
+  },
+  "metadata": {
+    "title": "Patagonia UK | Outdoor Clothing & Gear",
+    "metaDescription": "Patagonia is committed to doing business differently, from building outdoor clothing & gear that lasts a lifetime to supporting grassroots activism.",
+    "ogTitle": "Patagonia UK | Outdoor Clothing & Gear",
+    "themeColor": "white"
+  },
+  "headings": [
+    { "tag": "H1", "text": "Black Hole bags built to travel" },
+    { "tag": "H1", "text": "Meet the New Houdini Rock Jacket" },
+    { "tag": "H1", "text": "Take Action Now" },
+    { "tag": "H2", "text": "Latest Stories" },
+    { "tag": "H2", "text": "Newsletter Signup" }
+  ],
+  "ctas": [
+    { "text": "Explore the Collection", "href": "https://eu.patagonia.com/gb/en/shop/bags-gear/packs-bags/travel-bags" },
+    { "text": "About Activism", "href": "https://eu.patagonia.com/gb/en/activism/" },
+    { "text": "Take Action", "href": "https://eu.patagonia.com/gb/en/actionworks.html" },
+    { "text": "Keep Iceland Wild", "href": "https://eu.patagonia.com/gb/en/iceland/" },
+    { "text": "Protect Our Ocean", "href": "https://eu.patagonia.com/gb/en/eu-marine-protected-areas.html" },
+    { "text": "Add Your Voice", "href": "https://eu.patagonia.com/actionworks/en-gb/take-action/iceland-still-needs-you/" },
+    { "text": "Shop Women's", "href": "https://eu.patagonia.com/gb/en/shop/womens" },
+    { "text": "Shop Men's", "href": "https://eu.patagonia.com/gb/en/shop/mens" }
+  ],
+  "body": [
+    "Black Hole® bags are tough, weather-resistant and built to travel. Available in a range of sizes and styles, and designed for smart, efficient organization. Nothing escapes a Black Hole.",
+    "Iceland still needs you. A new aquaculture bill puts Iceland's wild nature at risk—join communities calling to ban open-net salmon farming now.",
+    "Sign up for exclusive offers, original stories, activism awareness, events and more."
+  ],
+  "media": {
+    "heroImage": "https://eu.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dw9c1f5bc7/category/black-hole/s26_blackhole_blackholebags-hero.jpg",
+    "images": [
+      { "src": "https://eu.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dw9c1f5bc7/category/black-hole/s26_blackhole_blackholebags-hero.jpg", "alt": "Black Hole bags" }
+    ]
+  },
+  "nav": {
+    "primary": ["Featured", "Women's", "Men's", "Kids'", "Packs", "Sports"],
+    "secondary": ["Activism", "Stories", "More"]
+  }
+}

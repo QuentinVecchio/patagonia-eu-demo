@@ -1,0 +1,182 @@
+{
+  "_provenance": {
+    "extractedAt": "2026-05-22T13:58:00.000Z",
+    "pagesAnalyzed": ["home", "nano-puff-pdp", "worn-wear"],
+    "aggregationScope": "cross-page"
+  },
+  "logo": {
+    "type": "svg-inline",
+    "path": "stardust/current/assets/logo.svg",
+    "viewBox": "0 0 122.1 22.7",
+    "source": "header a[href*='/home/'] svg symbol#icon--logo",
+    "notes": "Wordmark-style logo, horizontal layout, black fill on white header"
+  },
+  "palette": [
+    {
+      "role": "text",
+      "value": "#000000",
+      "rgb": "rgb(0, 0, 0)",
+      "frequency": 2653,
+      "source": "computed color, all pages"
+    },
+    {
+      "role": "background",
+      "value": "#FFFFFF",
+      "rgb": "rgb(255, 255, 255)",
+      "frequency": 53,
+      "source": "computed background-color, all pages"
+    },
+    {
+      "role": "surface-muted",
+      "value": "#F5F5F5",
+      "rgb": "rgb(245, 245, 245)",
+      "frequency": 11,
+      "source": "computed background-color, all pages"
+    },
+    {
+      "role": "brand-teal",
+      "value": "#27455C",
+      "rgb": "rgb(39, 69, 92)",
+      "frequency": 10,
+      "source": "computed background-color, navigation/UI elements"
+    },
+    {
+      "role": "surface-dark",
+      "value": "#333333",
+      "rgb": "rgb(51, 51, 51)",
+      "frequency": 8,
+      "source": "computed background-color, dark sections"
+    },
+    {
+      "role": "brand-green",
+      "value": "#466254",
+      "rgb": "rgb(70, 130, 84)",
+      "frequency": 4,
+      "source": "computed background-color, activism/environmental elements"
+    },
+    {
+      "role": "brand-terracotta",
+      "value": "#B46E58",
+      "rgb": "rgb(180, 110, 88)",
+      "frequency": 2,
+      "source": "computed color, accent elements"
+    },
+    {
+      "role": "surface-warm",
+      "value": "#F5F0E0",
+      "rgb": "rgb(245, 240, 224)",
+      "frequency": 1,
+      "source": "computed background-color, warm tint sections"
+    },
+    {
+      "role": "muted-text",
+      "value": "#555555",
+      "rgb": "rgb(85, 85, 85)",
+      "frequency": 16,
+      "source": "computed color, secondary text"
+    },
+    {
+      "role": "muted-text-2",
+      "value": "#4A4A4A",
+      "rgb": "rgb(74, 74, 74)",
+      "frequency": 5,
+      "source": "computed color, caption text"
+    }
+  ],
+  "type": {
+    "headingFamily": "Ridgeway Sans",
+    "bodyFamily": "Ridgeway Sans",
+    "serifFamily": "Copernicus",
+    "serifNote": "Galaxie Copernicus Book — used for editorial/story body text",
+    "iconFont": "patagonia-icons",
+    "files": [
+      {
+        "family": "Ridgeway Sans",
+        "path": "/on/demandware.static/Sites-patagonia-eu-Site/-/default/dwe6d5c5f9/fonts/RidgewaySans/RidgewaySans.woff2",
+        "format": "woff2",
+        "license": "proprietary-brand"
+      },
+      {
+        "family": "Copernicus",
+        "path": "https://images.patagonia.com/eMedia/fonts/GalaxieCopernicus/GalaxieCopernicus-Book.woff2",
+        "format": "woff2",
+        "license": "proprietary-brand"
+      },
+      {
+        "family": "Copernicus Italic",
+        "path": "https://images.patagonia.com/eMedia/fonts/GalaxieCopernicus/GalaxieCopernicus-BookItalic.woff2",
+        "format": "woff2",
+        "license": "proprietary-brand"
+      }
+    ],
+    "scale": {
+      "h1": { "size": "hero-varies", "weight": "500", "lineHeight": "1.1", "letterSpacing": "-0.02em" },
+      "h2": { "size": "48px", "weight": "500", "lineHeight": "52.8px", "letterSpacing": "-0.96px" },
+      "h3": { "size": "40px", "weight": "500", "lineHeight": "44px", "letterSpacing": "-0.8px" },
+      "h4": { "size": "14px", "weight": "500", "lineHeight": "21px" },
+      "body": { "size": "16px", "weight": "400", "lineHeight": "1.5" },
+      "small": { "size": "12px", "weight": "300" }
+    },
+    "scaleAudit": {
+      "kind": "ad-hoc",
+      "notes": "Heading sizes don't follow a strict modular scale; h2=48px, h3=40px has a 1.2x ratio. Body and UI text at 12-16px."
+    }
+  },
+  "motifs": {
+    "borderRadius": {
+      "signature": "0px",
+      "pill": "30px",
+      "card": "8px",
+      "badge": "17px",
+      "circle": "50%",
+      "notes": "Predominantly sharp/square corners (0px) for a utilitarian outdoors aesthetic. Pill buttons (30px) used for activist CTAs. Cards use 8px."
+    },
+    "shadows": [],
+    "gradients": [],
+    "patterns": ["hero-with-image", "card-grid", "editorial-text-block", "activist-banner"]
+  },
+  "voice": {
+    "heroHeadlines": [
+      "Black Hole bags built to travel",
+      "Meet the New Houdini Rock Jacket",
+      "Take Action Now"
+    ],
+    "bodyCopy": "Patagonia is committed to doing business differently, from building outdoor clothing & gear that lasts a lifetime to supporting grassroots activism.",
+    "productDescription": "We built the Nano Puff® Jacket for climbers who needed a weather-resistant, lightweight and packable synthetic insulation layer that could stay warm even when wet and withstand seasons of use.",
+    "taglines": [
+      "One of the most responsible things we can do for the planet is to keep our gear going longer.",
+      "Let's make things that last longer. And do more with what we already have."
+    ],
+    "ctaLabels": ["Explore the Collection", "Add Your Voice", "Start a Repair", "Shop", "View Ironclad Guarantee"],
+    "register": "brand",
+    "tone": "mission-driven, direct, nature-connected, activist",
+    "heroImage": "https://eu.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dw9c1f5bc7/category/black-hole/s26_blackhole_blackholebags-hero.jpg"
+  },
+  "systemComponents": [
+    {
+      "id": "site-header",
+      "description": "Navigation bar with logo, primary nav (Women's, Men's, Kids', Packs, Sports), secondary nav (Activism, Stories), search, wishlist, cart",
+      "pages": ["home", "nano-puff-pdp", "worn-wear"]
+    },
+    {
+      "id": "site-footer",
+      "description": "Newsletter signup, Get Help links, Information links, social, copyright, cookie preferences",
+      "pages": ["home", "nano-puff-pdp", "worn-wear"]
+    },
+    {
+      "id": "promo-banner",
+      "description": "Top banner: 'Free Delivery On Orders Over £90 | Shipping Information | Returns Information'",
+      "pages": ["home", "nano-puff-pdp", "worn-wear"]
+    },
+    {
+      "id": "activism-secondary-nav",
+      "description": "Secondary navigation expandable drawers for Activism, Stories, More with sub-menus",
+      "pages": ["home", "nano-puff-pdp", "worn-wear"]
+    }
+  ],
+  "iconFont": {
+    "family": "patagonia-icons",
+    "type": "data-uri-embedded",
+    "notes": "Icon font embedded as data URI in stylesheet"
+  }
+}

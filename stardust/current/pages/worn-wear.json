@@ -1,0 +1,56 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-05-22T13:56:55.767Z",
+    "waitMs": 570,
+    "waitMode": "medium",
+    "httpStatus": 200,
+    "url": "https://eu.patagonia.com/gb/en/worn-wear/",
+    "slug": "worn-wear"
+  },
+  "metadata": {
+    "title": "Worn Wear | Patagonia UK",
+    "metaDescription": "One of the most responsible things you can do as a consumer is to keep your stuff in play as long as possible—and our Worn Wear hub can help you do that."
+  },
+  "headings": [
+    { "tag": "H1", "text": "Worn Wear" }
+  ],
+  "body": [
+    "One of the most responsible things we can do for the planet is to keep our gear going longer. That's why we're making it as easy as possible to repair your gear.",
+    "Let's make things that last longer. And do more with what we already have.",
+    "We guarantee everything we make. If you are not satisfied with one of our products at the time you receive it, or if one of our products does not perform to your satisfaction, return it to the store you bought it from or to Patagonia for a repair, replacement or refund."
+  ],
+  "ctas": [
+    { "text": "Start a Repair", "href": "https://eu.patagonia.com/gb/en/repairs/" },
+    { "text": "DIY Repair Guides", "href": "#" },
+    { "text": "Repairs in Retail", "href": "#" },
+    { "text": "Events", "href": "#" },
+    { "text": "Our Footprint", "href": "https://eu.patagonia.com/gb/en/our-footprint/" },
+    { "text": "Stories", "href": "https://eu.patagonia.com/gb/en/stories/" },
+    { "text": "Recommerce", "href": "#" },
+    { "text": "View Ironclad Guarantee", "href": "https://eu.patagonia.com/gb/en/ironclad-guarantee.html" },
+    { "text": "Visit Patagonia Action Works", "href": "https://eu.patagonia.com/gb/en/actionworks/" },
+    { "text": "Visit Worn Wear", "href": "#" },
+    { "text": "Read Our Commitment", "href": "#" }
+  ],
+  "sections": [
+    {
+      "heading": "Worn Wear",
+      "purpose": "Program intro",
+      "content": "One of the most responsible things we can do for the planet is to keep our gear going longer."
+    },
+    {
+      "heading": "Our Footprint",
+      "purpose": "Environmental responsibility",
+      "content": "Let's make things that last longer. And do more with what we already have."
+    },
+    {
+      "heading": "Ironclad Guarantee",
+      "purpose": "Brand promise",
+      "content": "We guarantee everything we make."
+    }
+  ],
+  "media": {
+    "logo": "https://eu.patagonia.com/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dwe64ea385/images/wornwear/WW_logo-light.png"
+  }
+}

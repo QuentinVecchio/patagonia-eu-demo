@@ -1,0 +1,55 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-05-22T13:53:00.000Z",
+    "waitMs": 4000,
+    "waitMode": "medium",
+    "httpStatus": 200,
+    "url": "https://eu.patagonia.com/gb/en/product/mens-nano-puff-insulated-jacket/84213.html",
+    "slug": "nano-puff-pdp"
+  },
+  "metadata": {
+    "title": "Men's Nano Puff® Packable Insulated Jacket | Patagonia UK",
+    "metaDescription": "Our Patagonia® Men's Nano Puff® Jacket is a weather-resistant, lightweight and packable synthetic insulation layer that's durable and stays warm when wet."
+  },
+  "headings": [
+    { "tag": "H1", "text": "Men's Nano Puff® Jacket" },
+    { "tag": "H2", "text": "Fit" },
+    { "tag": "H2", "text": "Specs & Features" },
+    { "tag": "H3", "text": "100% Recycled Fabrics" },
+    { "tag": "H3", "text": "Incredible Warmth to Weight 100% Recycled Insulation" },
+    { "tag": "H3", "text": "Signature Horizontal Quilting" },
+    { "tag": "H3", "text": "Evolved Fit for Mobility and Comfort" }
+  ],
+  "product": {
+    "name": "Men's Nano Puff® Jacket",
+    "price": "£170",
+    "sku": "84212/84213",
+    "colors": ["Blue Sage", "Smolder Blue", "Forge Grey", "Old Growth Green", "Black"],
+    "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+    "silhouettes": ["Jacket", "Hoody", "Vest"],
+    "description": "We built the Nano Puff® Jacket for climbers who needed a weather-resistant, lightweight and packable synthetic insulation layer that could stay warm even when wet and withstand seasons of use. Ever since, those same features have made it the uncontested favorite midlayer for just about any outdoor pursuit. With fit refinements for improved mobility, 60-g PrimaLoft® Gold Insulation Eco 100% postconsumer recycled polyester with P.U.R.E.™ (Produced Using Reduced Emissions) technology, and a 100% recycled polyester shell and lining, this iteration of the Nano Puff reinforces why so many people call this the 'magic jacket.' Made in a Fair Trade Certified™ factory.",
+    "rating": "4.6",
+    "reviewCount": 2017,
+    "features": [
+      "100% Recycled Fabrics",
+      "60-g PrimaLoft® Gold Insulation Eco with P.U.R.E.™ technology",
+      "Signature horizontal quilting",
+      "Evolved fit for mobility and comfort",
+      "Fair Trade Certified™ factory",
+      "Packable into chest pocket",
+      "Weather-resistant DWR finish"
+    ]
+  },
+  "breadcrumbs": [
+    { "text": "Men's", "href": "/gb/en/shop/mens" },
+    { "text": "Jackets & Vests", "href": "/gb/en/shop/mens/jackets-vests" },
+    { "text": "Insulated", "href": "/gb/en/shop/mens/jackets-vests/insulated" },
+    { "text": "Men's Nano Puff® Jacket", "href": "#" }
+  ],
+  "ctas": [
+    { "text": "Add to Bag", "href": "#" },
+    { "text": "Find My Size", "href": "#" },
+    { "text": "Shipping & Exchanges", "href": "#" }
+  ]
+}

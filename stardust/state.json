@@ -1,0 +1,38 @@
+{
+  "site": {
+    "originUrl": "https://eu.patagonia.com",
+    "extractedAt": "2026-05-22T13:58:00.000Z",
+    "pageCap": 3,
+    "totalDiscovered": 3,
+    "crawled": 3
+  },
+  "pages": [
+    {
+      "slug": "home",
+      "url": "https://eu.patagonia.com/gb/en/home/",
+      "status": "extracted",
+      "currentStatePath": "stardust/current/pages/home.json",
+      "prototypePath": null,
+      "migratedPath": null,
+      "type": null
+    },
+    {
+      "slug": "nano-puff-pdp",
+      "url": "https://eu.patagonia.com/gb/en/product/mens-nano-puff-insulated-jacket/84213.html",
+      "status": "extracted",
+      "currentStatePath": "stardust/current/pages/nano-puff-pdp.json",
+      "prototypePath": null,
+      "migratedPath": null,
+      "type": "listing"
+    },
+    {
+      "slug": "worn-wear",
+      "url": "https://eu.patagonia.com/gb/en/worn-wear/",
+      "status": "extracted",
+      "currentStatePath": "stardust/current/pages/worn-wear.json",
+      "prototypePath": null,
+      "migratedPath": null,
+      "type": "landing"
+    }
+  ]
+}

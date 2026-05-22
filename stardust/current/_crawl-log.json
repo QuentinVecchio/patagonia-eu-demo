@@ -1,0 +1,32 @@
+{
+  "_provenance": {
+    "loggedAt": "2026-05-22T13:58:00.000Z",
+    "skillVersion": "extract",
+    "entryUrl": "https://eu.patagonia.com/gb/en/home/"
+  },
+  "discovery": {
+    "method": "explicit-pages",
+    "fetchTechnique": "playwright-headed-chrome",
+    "botManagementNote": "Site uses Demandware/SFCC platform. Loaded successfully in headed mode without bot blocks.",
+    "sitemapAttempted": false,
+    "pagesRequested": [
+      "https://eu.patagonia.com/gb/en/home/",
+      "https://eu.patagonia.com/gb/en/product/mens-nano-puff-insulated-jacket/84212.html",
+      "https://eu.patagonia.com/gb/en/wornwear/"
+    ]
+  },
+  "consent": {
+    "method": "none-required",
+    "notes": "No cookie consent modal was presented during the crawl session. Cookie preferences link exists in footer."
+  },
+  "selected": [
+    { "url": "https://eu.patagonia.com/gb/en/home/", "slug": "home", "reason": "explicit-pages" },
+    { "url": "https://eu.patagonia.com/gb/en/product/mens-nano-puff-insulated-jacket/84213.html", "slug": "nano-puff-pdp", "reason": "explicit-pages — Nano Puff flagship PDP" },
+    { "url": "https://eu.patagonia.com/gb/en/worn-wear/", "slug": "worn-wear", "reason": "explicit-pages — Worn Wear program" }
+  ],
+  "crawl": {
+    "successes": ["home", "nano-puff-pdp", "worn-wear"],
+    "failures": [],
+    "waitSummary": "All 3 pages resolved at medium waitMode (4000ms). No fallbacks required."
+  }
+}
