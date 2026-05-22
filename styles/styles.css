@@ -208,3 +208,14 @@ main .section.dark { background: var(--color-dark); color: var(--color-white); }
   h2 { font-size: 32px; }
   h3 { font-size: 28px; }
 }
+
+
+/* Full-bleed sections  override the default section wrapper max-width */
+.hero-carousel-wrapper,
+.hero-banner-wrapper,
+.split-banners-wrapper,
+.activism-wrapper,
+.promo-strip-wrapper {
+  max-width: 100% !important;
+  padding: 0 !important;
+}
