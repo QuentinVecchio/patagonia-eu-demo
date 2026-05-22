@@ -1,11 +1,3 @@
-/**
- * values-strip — 4-column grid of brand values with icon, heading, description.
- *
- * Authoring rows (one row per value):
- *   cell 0: icon — can be <picture>, inline SVG, or a text URL to an SVG/image
- *   cell 1: heading (h4 or p)
- *   cell 2: description
- */
 function convertTextToImage(cell) {
   if (!cell) return;
   if (cell.querySelector('picture, img, svg')) return;
@@ -25,12 +17,40 @@ export default async function decorate(block) {
   if (block.closest('.generated-section')) return;
 
   const rows = [...block.children];
+  const inner = document.createElement('div');
+  inner.className = 'values-strip-inner';
 
   rows.forEach((row) => {
     const cells = [...row.children];
-    // Convert text URLs to images in the icon cell
-    convertTextToImage(cells[0]);
+    const item = document.createElement('div');
+    item.className = 'value-item';
+
+    // icon cell - convert text URL to image if needed
+    const iconCell = cells[0];
+    if (iconCell) {
+      convertTextToImage(iconCell);
+      const iconWrap = document.createElement('div');
+      iconWrap.className = 'value-icon';
+      [...iconCell.childNodes].forEach((n) => iconWrap.appendChild(n.cloneNode(true)));
+      item.appendChild(iconWrap);
+    }
+
+    // heading
+    if (cells[1]) {
+      const h4 = document.createElement('h4');
+      h4.textContent = cells[1].textContent.trim();
+      item.appendChild(h4);
+    }
+
+    // description
+    if (cells[2]) {
+      const p = document.createElement('p');
+      p.textContent = cells[2].textContent.trim();
+      item.appendChild(p);
+    }
+
+    inner.appendChild(item);
   });
 
-  // Style via CSS only — no DOM rebuild needed for this simple grid
+  block.replaceChildren(inner);
 }
