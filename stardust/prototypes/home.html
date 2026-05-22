@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- _provenance: {"source":"eu.patagonia.com/gb/en/home/","capturedAt":"2026-05-22","fidelity":"quick","liveRenderEvidence":true} -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patagonia UK | Outdoor Clothing &amp; Gear</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-black: #000000;
+      --color-white: #FFFFFF;
+      --color-surface: #F5F5F5;
+      --color-dark: #1a1a1a;
+      --color-muted: #555555;
+      --color-border: #e0e0e0;
+      --color-teal: #27455C;
+      --color-green: #466254;
+      --color-terracotta: #B46E58;
+      --color-cream: #F5F0E0;
+      --font-primary: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+      --max-width: 1440px;
+      --section-pad: 64px 48px;
+      --radius-card: 0px;
+      --radius-pill: 30px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: var(--font-primary);
+      color: var(--color-dark);
+      background: var(--color-white);
+      font-size: 16px;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+
+    /* ── NAV ── */
+    .nav-announcement {
+      background: var(--color-dark);
+      color: var(--color-white);
+      text-align: center;
+      padding: 10px 24px;
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+    }
+    .nav-announcement a { color: var(--color-white); text-decoration: underline; }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--color-white);
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .nav-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 48px;
+      height: 60px;
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    .nav-logo svg {
+      width: 140px;
+      height: 28px;
+    }
+    .nav-logo-text {
+      font-size: 22px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .nav-primary {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+    .nav-primary a {
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: var(--color-dark);
+      padding: 4px 0;
+      border-bottom: 2px solid transparent;
+      transition: border-color 0.15s;
+    }
+    .nav-primary a:hover { border-bottom-color: var(--color-dark); }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .nav-actions a, .nav-actions button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--color-dark);
+      font-size: 13px;
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .nav-icon { width: 22px; height: 22px; }
+
+    /* ── HERO SLIDER ── */
+    .hero-section {
+      position: relative;
+      width: 100%;
+      height: 88vh;
+      min-height: 580px;
+      overflow: hidden;
+      background: var(--color-dark);
+    }
+    .hero-slide {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      transition: opacity 0.6s ease;
+    }
+    .hero-slide.active { opacity: 1; }
+    .hero-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.15) 60%, transparent 100%);
+    }
+    .hero-content {
+      position: absolute;
+      bottom: 80px;
+      left: 80px;
+      max-width: 520px;
+      color: var(--color-white);
+    }
+    .hero-content h1 {
+      font-size: 52px;
+      font-weight: 500;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      margin-bottom: 20px;
+    }
+    .hero-content p {
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 1.6;
+      margin-bottom: 28px;
+      opacity: 0.9;
+    }
+    .btn-hero {
+      display: inline-block;
+      background: var(--color-white);
+      color: var(--color-dark);
+      padding: 14px 32px;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      border-radius: var(--radius-pill);
+      transition: background 0.2s, color 0.2s;
+    }
+    .btn-hero:hover { background: var(--color-dark); color: var(--color-white); }
+
+    .hero-dots {
+      position: absolute;
+      bottom: 28px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 8px;
+    }
+    .hero-dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.4);
+      cursor: pointer;
+      border: none;
+      transition: background 0.2s;
+    }
+    .hero-dot.active { background: var(--color-white); }
+
+    .hero-slide-counter {
+      position: absolute;
+      bottom: 80px;
+      right: 60px;
+      color: rgba(255,255,255,0.7);
+      font-size: 12px;
+      letter-spacing: 0.1em;
+    }
+
+    /* ── CATEGORY ROUTING ── */
+    .section-routing {
+      padding: 60px 48px;
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+    .section-routing h2 {
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--color-muted);
+      margin-bottom: 28px;
+    }
+    .routing-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
+    }
+    .routing-tile {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 3/4;
+      border-radius: var(--radius-card);
+      background: var(--color-surface);
+    }
+    .routing-tile img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    .routing-tile:hover img { transform: scale(1.04); }
+    .routing-tile-label {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      padding: 40px 16px 16px;
+      background: linear-gradient(transparent, rgba(0,0,0,0.55));
+      color: var(--color-white);
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+    }
+    .routing-tile-link {
+      position: absolute;
+      inset: 0;
+    }
+
+    /* ── FEATURED HERO BANNER ── */
+    .hero-banner-full {
+      width: 100%;
+      height: 75vh;
+      min-height: 500px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-banner-full img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .hero-banner-full .hero-overlay {
+      background: linear-gradient(to bottom, transparent 40%, rgba(0,0,0,0.5) 100%);
+    }
+    .hero-banner-content {
+      position: absolute;
+      bottom: 72px;
+      left: 80px;
+      color: var(--color-white);
+      max-width: 480px;
+    }
+    .hero-banner-content h2 {
+      font-size: 48px;
+      font-weight: 500;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+    }
+    .btn-banner {
+      display: inline-block;
+      background: var(--color-white);
+      color: var(--color-dark);
+      padding: 12px 28px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      border-radius: var(--radius-pill);
+      margin-top: 8px;
+    }
+    .btn-banner:hover { background: rgba(255,255,255,0.85); }
+
+    /* ── TWO-UP SPLIT BANNERS ── */
+    .split-banners {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4px;
+      margin: 4px 0;
+    }
+    .split-banner {
+      position: relative;
+      height: 60vh;
+      min-height: 400px;
+      overflow: hidden;
+      background: var(--color-surface);
+    }
+    .split-banner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    .split-banner:hover img { transform: scale(1.03); }
+    .split-banner-content {
+      position: absolute;
+      bottom: 40px;
+      left: 36px;
+      color: var(--color-white);
+    }
+    .split-banner-content h3 {
+      font-size: 28px;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      margin-bottom: 12px;
+    }
+    .split-banner-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.45) 0%, transparent 60%);
+    }
+
+    /* ── ACTIVISM BANNER ── */
+    .activism-section {
+      position: relative;
+      height: 65vh;
+      min-height: 440px;
+      overflow: hidden;
+    }
+    .activism-section img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .activism-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.35);
+    }
+    .activism-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: var(--color-white);
+      max-width: 600px;
+      padding: 0 24px;
+    }
+    .activism-label {
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      opacity: 0.8;
+    }
+    .activism-content h2 {
+      font-size: 42px;
+      font-weight: 500;
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+    .activism-content p {
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 1.6;
+      margin-bottom: 28px;
+      opacity: 0.9;
+    }
+    .btn-outline-white {
+      display: inline-block;
+      border: 1.5px solid var(--color-white);
+      color: var(--color-white);
+      padding: 12px 28px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      border-radius: var(--radius-pill);
+      transition: background 0.2s, color 0.2s;
+    }
+    .btn-outline-white:hover { background: var(--color-white); color: var(--color-dark); }
+
+    /* ── WORN WEAR PROMO ── */
+    .promo-strip {
+      background: var(--color-cream);
+      padding: 64px 48px;
+      text-align: center;
+    }
+    .promo-strip h2 {
+      font-size: 36px;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      margin-bottom: 12px;
+    }
+    .promo-strip p {
+      font-size: 16px;
+      color: var(--color-muted);
+      max-width: 480px;
+      margin: 0 auto 24px;
+      line-height: 1.6;
+    }
+    .btn-dark {
+      display: inline-block;
+      background: var(--color-dark);
+      color: var(--color-white);
+      padding: 12px 32px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      border-radius: var(--radius-pill);
+    }
+    .btn-dark:hover { background: #333; }
+
+    /* ── VALUES STRIP ── */
+    .values-strip {
+      padding: 56px 48px;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 32px;
+      border-top: 1px solid var(--color-border);
+    }
+    .value-item {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .value-item .value-icon {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 8px;
+    }
+    .value-item h4 {
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+    }
+    .value-item p {
+      font-size: 13px;
+      color: var(--color-muted);
+      line-height: 1.5;
+    }
+
+    /* ── FOOTER ── */
+    .site-footer {
+      background: var(--color-dark);
+      color: var(--color-white);
+      padding: 64px 48px 40px;
+    }
+    .footer-grid {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr repeat(4, 1fr);
+      gap: 48px;
+      margin-bottom: 48px;
+    }
+    .footer-brand p {
+      font-size: 13px;
+      color: rgba(255,255,255,0.6);
+      line-height: 1.6;
+      margin-top: 12px;
+      max-width: 280px;
+    }
+    .footer-col h5 {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.5);
+      margin-bottom: 16px;
+    }
+    .footer-col ul { list-style: none; }
+    .footer-col ul li { margin-bottom: 10px; }
+    .footer-col ul li a {
+      font-size: 13px;
+      color: rgba(255,255,255,0.75);
+      transition: color 0.15s;
+    }
+    .footer-col ul li a:hover { color: var(--color-white); }
+    .footer-bottom {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,0.12);
+      font-size: 12px;
+      color: rgba(255,255,255,0.4);
+    }
+
+    /* ── PATAGONIA LOGO SVG ── */
+    .patagonia-logo-svg {
+      display: flex;
+      align-items: center;
+      gap: 0;
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .routing-grid { grid-template-columns: repeat(3, 1fr); }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 768px) {
+      .nav-top { padding: 0 20px; }
+      .nav-primary { display: none; }
+      .hero-content { left: 24px; bottom: 60px; }
+      .hero-content h1 { font-size: 36px; }
+      .routing-grid { grid-template-columns: repeat(2, 1fr); }
+      .split-banners { grid-template-columns: 1fr; }
+      .section-routing { padding: 40px 20px; }
+      .promo-strip { padding: 48px 24px; }
+      .values-strip { grid-template-columns: 1fr 1fr; padding: 40px 20px; }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; padding: 0; }
+      .site-footer { padding: 48px 24px 32px; }
+    }
+    @media (max-width: 640px) {
+      .hero-content h1 { font-size: 28px; }
+      .routing-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+      .hero-banner-content h2 { font-size: 32px; }
+      .activism-content h2 { font-size: 28px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="nav-announcement">
+    Free Delivery On Orders Over £90 &nbsp;|&nbsp;
+    <a href="https://eu.patagonia.com/gb/en/delivery.html">Shipping Information</a>
+    &nbsp;|&nbsp;
+    <a href="https://eu.patagonia.com/gb/en/eu-returns.html">Returns Information</a>
+  </div>
+
+  <!-- Header / Nav -->
+  <header class="site-header" role="banner">
+    <div class="nav-top">
+      <a href="https://eu.patagonia.com/gb/en/home/" class="nav-logo" aria-label="Patagonia Home">
+        <span class="nav-logo-text">PATAGONIA</span>
+      </a>
+
+      <nav class="nav-primary" aria-label="Primary navigation">
+        <a href="https://eu.patagonia.com/gb/en/home/">Featured</a>
+        <a href="https://eu.patagonia.com/gb/en/shop/womens">Women's</a>
+        <a href="https://eu.patagonia.com/gb/en/shop/mens">Men's</a>
+        <a href="https://eu.patagonia.com/gb/en/shop/kids-baby">Kids'</a>
+        <a href="https://eu.patagonia.com/gb/en/shop/packs-gear">Packs</a>
+        <a href="https://eu.patagonia.com/gb/en/sports/">Sports</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://eu.patagonia.com/gb/en/search/" aria-label="Search">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="10.5" cy="10.5" r="6.5"/>
+            <line x1="15.5" y1="15.5" x2="22" y2="22"/>
+          </svg>
+        </a>
+        <a href="https://eu.patagonia.com/gb/en/account/" aria-label="Account">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="12" cy="8" r="4"/>
+            <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+          </svg>
+        </a>
+        <a href="https://eu.patagonia.com/gb/en/cart/" aria-label="Shopping cart">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 01-8 0"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero Carousel -->
+    <section class="hero-section" aria-label="Featured campaigns">
+      <!-- Slide 1: Black Hole Bags -->
+      <div class="hero-slide active" aria-hidden="false">
+        <img
+          src="https://eu.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dw9c1f5bc7/category/black-hole/s26_blackhole_blackholebags-hero.jpg?q=70&"
+          alt="Black Hole Bags built to travel"
+          loading="eager"
+          fetchpriority="high"
+          width="2920"
+          height="1947"
+        >
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-content">
+          <h1>Black Hole bags<br>built to travel</h1>
+          <a href="https://eu.patagonia.com/gb/en/shop/gear/bags/black-hole" class="btn-hero">Explore the Collection</a>
+        </div>
+      </div>
+
+      <!-- Slide 2: Free Wall Kit / Houdini Rock Jacket -->
+      <div class="hero-slide" aria-hidden="true">
+        <img
+          src="https://eu.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dw6a6f3519/category/freewall/PAT_S26_FWK_hero_cc_WEB.jpg?q=70&"
+          alt="Meet the New Houdini Rock Jacket"
+          loading="lazy"
+          width="2920"
+          height="1947"
+        >
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-content">
+          <h1>Meet the New<br>Houdini Rock Jacket</h1>
+          <a href="https://eu.patagonia.com/gb/en/shop/sport/climbing/mens/free-wall-kit" class="btn-hero">Men's</a>
+        </div>
+      </div>
+
+      <!-- Slide 3: Iceland Campaign -->
+      <div class="hero-slide" aria-hidden="true">
+        <img
+          src="https://eu.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dw7d9d0916/images/campaigns/iceland/iceland-hero-eu.jpg?q=70&"
+          alt="Take Action — Keep Iceland Wild"
+          loading="lazy"
+          width="2492"
+          height="1298"
+        >
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-content">
+          <h1>Take Action Now</h1>
+          <p>Add your voice to keep Iceland wild</p>
+          <a href="https://eu.patagonia.com/actionworks/en-gb/take-action/iceland-still-needs-you/" class="btn-hero">Add Your Voice</a>
+        </div>
+      </div>
+
+      <div class="hero-dots" role="tablist" aria-label="Hero slides">
+        <button class="hero-dot active" role="tab" aria-selected="true" aria-label="Slide 1" onclick="goToSlide(0)"></button>
+        <button class="hero-dot" role="tab" aria-selected="false" aria-label="Slide 2" onclick="goToSlide(1)"></button>
+        <button class="hero-dot" role="tab" aria-selected="false" aria-label="Slide 3" onclick="goToSlide(2)"></button>
+      </div>
+      <div class="hero-slide-counter" aria-hidden="true">01 / 03</div>
+    </section>
+
+    <!-- Category Routing -->
+    <section class="section-routing" aria-label="Shop by category">
+      <h2>Shop</h2>
+      <div class="routing-grid">
+        <a href="https://eu.patagonia.com/gb/en/shop/womens" class="routing-tile">
+          <img
+            src="https://eu.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Sites-patagonia-storefront-eu/default/dw02e851cc/category/routing/EU-mlrt-womens.jpg?q=85&sw=850&"
+            alt="Women's clothing"
+            loading="lazy"
+            width="809"
+            height="809"
+          >
+          <span class="routing-tile-label">Women's</span>
+        </a>
+        <a href="https://eu.patagonia.com/gb/en/shop/mens" class="routing-tile">
+          <img
+            src="https://eu.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Sites-patagonia-storefront-eu/default/dw6ae85446/category/routing/EU-mlrt-mens.jpg?q=85&sw=850&"
+            alt="Men's clothing"
+            loading="lazy"
+            width="809"
+            height="809"
+          >
+          <span class="routing-tile-label">Men's</span>
+        </a>
+        <a href="https://eu.patagonia.com/gb/en/shop/kids-baby" class="routing-tile">
+          <img
+            src="https://eu.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Sites-patagonia-storefront-eu/default/dw46d2dda7/category/routing/EU-mlrt-kids.jpg?q=85&sw=850&"
+            alt="Kids' clothing"
+            loading="lazy"
+            width="809"
+            height="809"
+          >
+          <span class="routing-tile-label">Kids'</span>
+        </a>
+        <a href="https://eu.patagonia.com/gb/en/shop/gear/bags" class="routing-tile">
+          <img
+            src="https://eu.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Sites-patagonia-storefront-eu/default/dwa3033319/category/routing/EU-mlrt-luggage.jpg?q=85&sw=850&"
+            alt="Bags and packs"
+            loading="lazy"
+            width="809"
+            height="809"
+          >
+          <span class="routing-tile-label">Packs &amp; Bags</span>
+        </a>
+        <a href="https://eu.patagonia.com/gb/en/shop/sport/workwear" class="routing-tile">
+          <img
+            src="https://eu.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Sites-patagonia-storefront-eu/default/dw438eb535/category/routing/s25-workwear-routing-eu.jpg?q=85&sw=850&"
+            alt="Workwear"
+            loading="lazy"
+            width="809"
+            height="539"
+          >
+          <span class="routing-tile-label">Workwear</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Featured: Black Hole Full Banner -->
+    <section class="hero-banner-full" aria-label="Black Hole bags campaign">
+      <img
+        src="https://eu.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dw9c1f5bc7/category/black-hole/s26_blackhole_blackholebags-hero.jpg?q=70&"
+        alt="Black Hole bags built to travel"
+        loading="lazy"
+        width="2920"
+        height="1947"
+      >
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-banner-content">
+        <h2>Black Hole bags<br>built to travel</h2>
+        <a href="https://eu.patagonia.com/gb/en/shop/gear/bags/black-hole" class="btn-banner">Explore the Collection</a>
+      </div>
+    </section>
+
+    <!-- Capilene Cool Sun — Split Banners -->
+    <div class="split-banners" aria-label="Capilene Cool Sun collection">
+      <div class="split-banner">
+        <img
+          src="https://eu.patagonia.com/on/demandware.static/-/Sites/default/dw846d06f6/nav/s26_sunpro_marketingtile-01.jpg?q=85&sw=1548"
+          alt="Capilene Cool Sun — Women's"
+          loading="lazy"
+          width="2482"
+          height="3060"
+        >
+        <div class="split-banner-overlay" aria-hidden="true"></div>
+        <div class="split-banner-content">
+          <h3>Capilene® Cool Sun</h3>
+          <a href="https://eu.patagonia.com/gb/en/shop/womens/tops/tech-tees/capilene-cool-sun" class="btn-banner">Women's</a>
+        </div>
+      </div>
+      <div class="split-banner">
+        <img
+          src="https://eu.patagonia.com/on/demandware.static/-/Sites/default/dw59ac56ce/nav/s26_sunpro_marketingtile-02.jpg?q=85&sw=1548"
+          alt="Capilene Cool Sun — Men's"
+          loading="lazy"
+          width="2482"
+          height="3062"
+        >
+        <div class="split-banner-overlay" aria-hidden="true"></div>
+        <div class="split-banner-content">
+          <h3>Capilene® Cool Sun</h3>
+          <a href="https://eu.patagonia.com/gb/en/shop/mens/tops/tech-tees/capilene-cool-sun" class="btn-banner">Men's</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Activism / Iceland Campaign -->
+    <section class="activism-section" aria-label="Keep Iceland Wild activism campaign">
+      <img
+        src="https://eu.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dw7d9d0916/images/campaigns/iceland/iceland-hero-eu.jpg?q=70&"
+        alt="Keep Iceland Wild campaign"
+        loading="lazy"
+        width="2492"
+        height="1298"
+      >
+      <div class="activism-overlay" aria-hidden="true"></div>
+      <div class="activism-content">
+        <p class="activism-label">Activism</p>
+        <h2>Iceland Still Needs You</h2>
+        <p>A new aquaculture bill puts Iceland's wild nature at risk — join communities calling to ban open-net salmon farming now.</p>
+        <a href="https://eu.patagonia.com/actionworks/en-gb/take-action/iceland-still-needs-you/" class="btn-outline-white">Add Your Voice</a>
+      </div>
+    </section>
+
+    <!-- Worn Wear Promo Strip -->
+    <div class="promo-strip">
+      <h2>We Keep Your Gear Going</h2>
+      <p>One of the most responsible things we can do for the planet is to keep our gear going longer.</p>
+      <a href="https://eu.patagonia.com/gb/en/worn-wear/" class="btn-dark">Visit Worn Wear</a>
+    </div>
+
+    <!-- Values strip -->
+    <div class="values-strip">
+      <div class="value-item">
+        <img
+          src="https://eu.patagonia.com/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dwf66bcf4c/quality/S24-Brand-Evergreen-Icons-ironclad.svg"
+          alt="Ironclad Guarantee"
+          class="value-icon"
+          loading="lazy"
+          width="40"
+          height="40"
+        >
+        <h4>Ironclad Guarantee</h4>
+        <p>We guarantee everything we make. If it's not right, we'll make it right.</p>
+      </div>
+      <div class="value-item">
+        <svg class="value-icon" viewBox="0 0 40 40" fill="none" stroke="#1a1a1a" stroke-width="1.5" aria-hidden="true">
+          <path d="M20 4l4 8 9 1.3-6.5 6.3 1.5 9L20 24l-8 4.6 1.5-9L7 13.3l9-1.3z"/>
+        </svg>
+        <h4>1% for the Planet</h4>
+        <p>We donate 1% of sales to grassroots environmental organisations worldwide.</p>
+      </div>
+      <div class="value-item">
+        <svg class="value-icon" viewBox="0 0 40 40" fill="none" stroke="#1a1a1a" stroke-width="1.5" aria-hidden="true">
+          <path d="M20 36c8.8-4.4 14-11.2 14-18.5C34 10.7 27.7 5 20 5S6 10.7 6 17.5C6 24.8 11.2 31.6 20 36z"/>
+          <path d="M14 20s2 4 6 4 6-4 6-4"/>
+        </svg>
+        <h4>Our Footprint</h4>
+        <p>Let's make things that last longer and do more with what we already have.</p>
+      </div>
+      <div class="value-item">
+        <svg class="value-icon" viewBox="0 0 40 40" fill="none" stroke="#1a1a1a" stroke-width="1.5" aria-hidden="true">
+          <path d="M8 20s4-12 12-12 12 12 12 12-4 12-12 12S8 20 8 20z"/>
+          <circle cx="20" cy="20" r="4"/>
+        </svg>
+        <h4>Worn Wear</h4>
+        <p>Repairing, reselling, and recycling your gear to reduce our environmental impact.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span style="font-size:18px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;">PATAGONIA</span>
+        <p>We're in business to save our home planet. Patagonia donates its profits — time, services and at least 1% of sales — to hundreds of grassroots environmental groups.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Get Help</h5>
+        <ul>
+          <li><a href="https://eu.patagonia.com/gb/en/eu-customer-service.html">Customer Service</a></li>
+          <li><a href="https://eu.patagonia.com/gb/en/delivery.html">Delivery</a></li>
+          <li><a href="https://eu.patagonia.com/gb/en/eu-customer-service-faqs.html">FAQs</a></li>
+          <li><a href="https://eu.patagonia.com/gb/en/product-care/">Repairs</a></li>
+          <li><a href="https://eu.patagonia.com/gb/en/eu-returns.html">Returns</a></li>
+          <li><a href="https://eu.patagonia.com/gb/en/size-charts.html">Size Guide</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Information</h5>
+        <ul>
+          <li><a href="https://eu.patagonia.com/gb/en/actionworks/">Patagonia Action Works</a></li>
+          <li><a href="https://eu.patagonia.com/gb/en/worn-wear/">Worn Wear</a></li>
+          <li><a href="https://eu.patagonia.com/gb/en/our-footprint/">Our Footprint</a></li>
+          <li><a href="https://eu.patagonia.com/gb/en/one-percent-for-the-planet.html">1% for the Planet</a></li>
+          <li><a href="https://eu.patagonia.com/gb/en/ironclad-guarantee.html">Ironclad Guarantee</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="https://eu.patagonia.com/gb/en/stories/">Stories</a></li>
+          <li><a href="https://eu.patagonia.com/gb/en/eu-store-locations.html">Find a Store</a></li>
+          <li><a href="https://eu.patagonia.com/gb/en/pro/">Pro Community</a></li>
+          <li><a href="https://eu.patagonia.com/gb/en/careers/">Careers</a></li>
+          <li><a href="https://eu.patagonia.com/gb/en/press/">Press</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="https://eu.patagonia.com/gb/en/privacy-policy.html">Privacy Notice</a></li>
+          <li><a href="https://eu.patagonia.com/gb/en/terms-and-conditions.html">Terms &amp; Conditions</a></li>
+          <li><a href="#">Cookie Preferences</a></li>
+          <li><a href="https://eu.patagonia.com/gb/en/sitemap.html">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Patagonia, Inc. All Rights Reserved.</span>
+      <span>English</span>
+    </div>
+  </footer>
+
+  <script>
+    // Prevent animation on users who prefer reduced motion
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.hero-slide');
+    const dots = document.querySelectorAll('.hero-dot');
+    const counter = document.querySelector('.hero-slide-counter');
+
+    function goToSlide(n) {
+      slides[currentSlide].classList.remove('active');
+      slides[currentSlide].setAttribute('aria-hidden', 'true');
+      dots[currentSlide].classList.remove('active');
+      dots[currentSlide].setAttribute('aria-selected', 'false');
+      currentSlide = n;
+      slides[currentSlide].classList.add('active');
+      slides[currentSlide].setAttribute('aria-hidden', 'false');
+      dots[currentSlide].classList.add('active');
+      dots[currentSlide].setAttribute('aria-selected', 'true');
+      if (counter) counter.textContent = String(currentSlide + 1).padStart(2,'0') + ' / 03';
+    }
+
+    if (!prefersReduced) {
+      setInterval(() => {
+        goToSlide((currentSlide + 1) % slides.length);
+      }, 5000);
+    }
+  </script>
+</body>
+</html>

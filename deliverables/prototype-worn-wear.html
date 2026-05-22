@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- _provenance: {"source":"eu.patagonia.com/gb/en/worn-wear/","capturedAt":"2026-05-22","fidelity":"quick","liveRenderEvidence":true} -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Worn Wear | Patagonia UK</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-black: #000000;
+      --color-white: #FFFFFF;
+      --color-surface: #F5F5F5;
+      --color-dark: #1a1a1a;
+      --color-muted: #555555;
+      --color-border: #e0e0e0;
+      --color-teal: #27455C;
+      --color-green: #466254;
+      --color-terracotta: #B46E58;
+      --color-cream: #F5F0E0;
+      /* Worn Wear brand colors extracted from page CSS */
+      --ww-brown: #603c1a;
+      --ww-cream: #f7d3a6;
+      --ww-rust: #dc5e3c;
+      --font-primary: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+      --max-width: 1440px;
+      --radius-pill: 30px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: var(--font-primary);
+      color: var(--color-dark);
+      background: var(--color-white);
+      font-size: 16px;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+
+    /* ── NAV ── */
+    .nav-announcement {
+      background: var(--color-dark);
+      color: var(--color-white);
+      text-align: center;
+      padding: 10px 24px;
+      font-size: 13px;
+      font-weight: 400;
+    }
+    .nav-announcement a { color: var(--color-white); text-decoration: underline; }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--color-white);
+      border-bottom: 1px solid var(--color-border);
+    }
+    .nav-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 48px;
+      height: 60px;
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+    .nav-logo-text {
+      font-size: 22px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .nav-primary {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+    .nav-primary a {
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: var(--color-dark);
+      padding: 4px 0;
+      border-bottom: 2px solid transparent;
+      transition: border-color 0.15s;
+    }
+    .nav-primary a.active { border-bottom-color: var(--color-dark); }
+    .nav-primary a:hover { border-bottom-color: var(--color-dark); }
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .nav-icon { width: 22px; height: 22px; }
+
+    /* ── HERO ── */
+    .ww-hero {
+      position: relative;
+      height: 88vh;
+      min-height: 560px;
+      overflow: hidden;
+      /* Worn Wear brand brown/terracotta background */
+      background: var(--ww-brown);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Hero uses video loop — fallback to a still from the worn wear imagery */
+    .ww-hero-bg {
+      position: absolute;
+      inset: 0;
+      background: var(--ww-brown);
+    }
+    .ww-hero-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.55;
+    }
+
+    .ww-hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 0 40px;
+      max-width: 700px;
+      color: var(--color-white);
+    }
+
+    /* Worn Wear Logo — the WW logotype from the page */
+    .ww-logo {
+      max-width: 380px;
+      width: 100%;
+      margin: 0 auto 24px;
+    }
+    .ww-logo img {
+      width: 100%;
+      height: auto;
+    }
+
+    .ww-hero-tagline {
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 1.55;
+      color: var(--ww-cream);
+      margin-bottom: 32px;
+      max-width: 560px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .ww-hero-caret {
+      position: absolute;
+      bottom: 32px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: rgba(255,255,255,0.6);
+      animation: bounce 1.6s ease-in-out infinite;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+      50% { transform: translateX(-50%) translateY(6px); }
+    }
+
+    /* ── SUBNAV ── */
+    .ww-subnav {
+      position: sticky;
+      top: 60px;
+      z-index: 50;
+      background: var(--color-white);
+      border-bottom: 1px solid var(--color-border);
+    }
+    .ww-subnav-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 48px;
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      height: 48px;
+      font-size: 13px;
+    }
+    .ww-subnav-item {
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      white-space: nowrap;
+      padding: 4px 0;
+      border-bottom: 2px solid transparent;
+      color: var(--color-muted);
+      transition: color 0.15s, border-color 0.15s;
+    }
+    .ww-subnav-item:hover, .ww-subnav-item.active {
+      color: var(--color-dark);
+      border-bottom-color: var(--color-dark);
+    }
+
+    /* ── INTRO BLOCK ── */
+    .ww-intro {
+      background: var(--ww-brown);
+      color: var(--color-white);
+      padding: 80px 48px;
+      text-align: center;
+    }
+    .ww-intro h2 {
+      font-size: 40px;
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: -0.015em;
+      color: var(--ww-cream);
+      max-width: 680px;
+      margin: 0 auto 20px;
+    }
+    .ww-intro p {
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 1.65;
+      color: rgba(247,211,166,0.8);
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    /* ── MARKETING GRID ── */
+    /* The Worn Wear page uses a 3x3 grid of tiles */
+    .ww-grid-section {
+      padding: 0;
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+    .ww-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+      gap: 4px;
+      background: var(--color-border);
+    }
+
+    .ww-tile {
+      position: relative;
+      overflow: hidden;
+      background: var(--color-dark);
+    }
+    .ww-tile img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+      display: block;
+    }
+    .ww-tile:hover img { transform: scale(1.04); }
+
+    /* Tile sizes */
+    .ww-tile-large {
+      grid-column: span 2;
+      aspect-ratio: 16/10;
+    }
+    .ww-tile-tall {
+      grid-column: span 1;
+      grid-row: span 2;
+    }
+    .ww-tile-square {
+      aspect-ratio: 1;
+    }
+    .ww-tile-wide {
+      grid-column: span 2;
+      aspect-ratio: 16/9;
+    }
+
+    /* Tile text overlay */
+    .ww-tile-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, transparent 55%);
+    }
+    .ww-tile-content {
+      position: absolute;
+      bottom: 24px;
+      left: 24px;
+      right: 24px;
+      color: var(--color-white);
+    }
+    .ww-tile-label {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ww-cream);
+      margin-bottom: 6px;
+    }
+    .ww-tile-content h3 {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1.25;
+      margin-bottom: 12px;
+    }
+
+    /* CTA buttons inside tiles */
+    .btn-tile-rust {
+      display: inline-block;
+      background: var(--ww-rust);
+      color: var(--color-white);
+      border: none;
+      padding: 10px 22px;
+      font-family: var(--font-primary);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      border-radius: var(--radius-pill);
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .btn-tile-rust:hover { background: #c44e2e; }
+    .btn-tile-cream {
+      display: inline-block;
+      background: var(--ww-cream);
+      color: var(--ww-brown);
+      border: none;
+      padding: 10px 22px;
+      font-family: var(--font-primary);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      border-radius: var(--radius-pill);
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .btn-tile-cream:hover { background: #f0c490; }
+
+    /* Text-only tile (filler2) */
+    .ww-tile-text {
+      background: var(--ww-brown);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 32px;
+      color: var(--ww-cream);
+      aspect-ratio: 1;
+    }
+    .ww-tile-text h3 {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 1.3;
+      margin-bottom: 16px;
+    }
+    .ww-tile-text p {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1.6;
+      opacity: 0.8;
+      margin-bottom: 20px;
+    }
+
+    /* ── SECOND CONTENT ROW ── */
+    .ww-grid-bottom {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 4px;
+      background: var(--color-border);
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    /* ── COMMITMENT STRIP ── */
+    .commitment-strip {
+      background: var(--color-dark);
+      color: var(--color-white);
+      padding: 64px 48px;
+      text-align: center;
+    }
+    .commitment-strip h2 {
+      font-size: 32px;
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+    .commitment-strip p {
+      font-size: 16px;
+      font-weight: 300;
+      color: rgba(255,255,255,0.7);
+      max-width: 520px;
+      margin: 0 auto 28px;
+      line-height: 1.6;
+    }
+    .btn-outline-cream {
+      display: inline-block;
+      border: 1.5px solid var(--ww-cream);
+      color: var(--ww-cream);
+      padding: 12px 28px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      border-radius: var(--radius-pill);
+      transition: background 0.2s, color 0.2s;
+    }
+    .btn-outline-cream:hover { background: var(--ww-cream); color: var(--ww-brown); }
+
+    /* ── VALUE PROPS ── */
+    .ww-values {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      background: var(--color-surface);
+      border-top: 1px solid var(--color-border);
+    }
+    .ww-value {
+      padding: 40px 28px;
+      border-right: 1px solid var(--color-border);
+      text-align: center;
+    }
+    .ww-value:last-child { border-right: none; }
+    .ww-value-icon {
+      width: 44px;
+      height: 44px;
+      margin: 0 auto 12px;
+    }
+    .ww-value h4 {
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .ww-value p {
+      font-size: 12px;
+      color: var(--color-muted);
+      line-height: 1.5;
+    }
+    .ww-value a {
+      font-size: 12px;
+      font-weight: 500;
+      text-decoration: underline;
+      color: var(--color-dark);
+    }
+
+    /* ── FOOTER ── */
+    .site-footer {
+      background: var(--color-dark);
+      color: var(--color-white);
+      padding: 64px 48px 40px;
+    }
+    .footer-grid {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr repeat(4, 1fr);
+      gap: 48px;
+      margin-bottom: 48px;
+    }
+    .footer-brand p {
+      font-size: 13px;
+      color: rgba(255,255,255,0.6);
+      line-height: 1.6;
+      margin-top: 12px;
+      max-width: 280px;
+    }
+    .footer-col h5 {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.5);
+      margin-bottom: 16px;
+    }
+    .footer-col ul { list-style: none; }
+    .footer-col ul li { margin-bottom: 10px; }
+    .footer-col ul li a {
+      font-size: 13px;
+      color: rgba(255,255,255,0.75);
+      transition: color 0.15s;
+    }
+    .footer-col ul li a:hover { color: var(--color-white); }
+    .footer-bottom {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,0.12);
+      font-size: 12px;
+      color: rgba(255,255,255,0.4);
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .ww-grid { grid-template-columns: repeat(2, 1fr); }
+      .ww-grid-bottom { grid-template-columns: repeat(2, 1fr); }
+      .ww-tile-large, .ww-tile-wide { grid-column: span 2; }
+      .ww-values { grid-template-columns: repeat(3, 1fr); }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 768px) {
+      .nav-top { padding: 0 20px; }
+      .nav-primary { display: none; }
+      .ww-hero { height: 75vh; }
+      .ww-logo { max-width: 260px; }
+      .ww-hero-tagline { font-size: 15px; }
+      .ww-intro { padding: 56px 24px; }
+      .ww-intro h2 { font-size: 28px; }
+      .ww-subnav-inner { padding: 0 20px; gap: 20px; overflow-x: auto; }
+      .ww-grid { grid-template-columns: 1fr 1fr; }
+      .ww-tile-large { grid-column: span 2; }
+      .ww-tile-tall { grid-row: span 1; }
+      .ww-grid-bottom { grid-template-columns: 1fr 1fr; }
+      .ww-values { grid-template-columns: repeat(2, 1fr); }
+      .site-footer { padding: 48px 24px 32px; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .commitment-strip { padding: 48px 24px; }
+    }
+    @media (max-width: 640px) {
+      .ww-grid { grid-template-columns: 1fr; gap: 2px; }
+      .ww-tile-large, .ww-tile-tall, .ww-tile-wide, .ww-tile-square { grid-column: span 1; grid-row: span 1; aspect-ratio: 4/3; }
+      .ww-tile-tall { aspect-ratio: 4/3; }
+      .ww-grid-bottom { grid-template-columns: 1fr; }
+      .ww-values { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="nav-announcement">
+    Free Delivery On Orders Over £90 &nbsp;|&nbsp;
+    <a href="https://eu.patagonia.com/gb/en/delivery.html">Shipping Information</a>
+    &nbsp;|&nbsp;
+    <a href="https://eu.patagonia.com/gb/en/eu-returns.html">Returns Information</a>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="nav-top">
+      <a href="https://eu.patagonia.com/gb/en/home/" class="nav-logo" aria-label="Patagonia Home">
+        <span class="nav-logo-text">PATAGONIA</span>
+      </a>
+      <nav class="nav-primary" aria-label="Primary navigation">
+        <a href="https://eu.patagonia.com/gb/en/home/">Featured</a>
+        <a href="https://eu.patagonia.com/gb/en/shop/womens">Women's</a>
+        <a href="https://eu.patagonia.com/gb/en/shop/mens">Men's</a>
+        <a href="https://eu.patagonia.com/gb/en/shop/kids-baby">Kids'</a>
+        <a href="https://eu.patagonia.com/gb/en/shop/packs-gear">Packs</a>
+        <a href="https://eu.patagonia.com/gb/en/sports/">Sports</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="https://eu.patagonia.com/gb/en/search/" aria-label="Search">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="10.5" cy="10.5" r="6.5"/><line x1="15.5" y1="15.5" x2="22" y2="22"/></svg>
+        </a>
+        <a href="https://eu.patagonia.com/gb/en/account/" aria-label="Account">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+        </a>
+        <a href="https://eu.patagonia.com/gb/en/cart/" aria-label="Cart">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero: Worn Wear -->
+    <section class="ww-hero" aria-label="Worn Wear hero">
+      <div class="ww-hero-bg">
+        <!-- Repairs hero background image -->
+        <img
+          src="https://eu.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dwe96b37af/hero/Web_Large-woodward_f_0665_BP.jpg?q=85&sw=1440&"
+          alt=""
+          loading="eager"
+          fetchpriority="high"
+          aria-hidden="true"
+          width="1440"
+          height="900"
+        >
+      </div>
+      <div class="ww-hero-content">
+        <!-- Worn Wear logo from the live page -->
+        <div class="ww-logo">
+          <img
+            src="https://eu.patagonia.com/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dwe64ea385/images/wornwear/WW_logo-light.png"
+            alt="Worn Wear"
+            loading="eager"
+            fetchpriority="high"
+            width="600"
+            height="200"
+          >
+        </div>
+        <p class="ww-hero-tagline">One of the most responsible things we can do for the planet is to keep our gear going longer. That's why we're making it as easy as possible to repair your gear.</p>
+      </div>
+      <div class="ww-hero-caret" aria-hidden="true">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <polyline points="6 9 12 15 18 9"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Sub-navigation -->
+    <nav class="ww-subnav" aria-label="Worn Wear sections">
+      <div class="ww-subnav-inner">
+        <a href="https://customers.eu.patagonia.com/en-US/repairs/" class="ww-subnav-item active">Start a Repair</a>
+        <a href="https://eu.patagonia.com/gb/en/product-care/#diy-repair-guides" class="ww-subnav-item">DIY Repair Guides</a>
+        <a href="https://eu.patagonia.com/gb/en/worn-wear/#asset-modal-wornwear-repairs-retail-modal" class="ww-subnav-item">Repairs in Retail</a>
+        <a href="https://eu.patagonia.com/gb/en/wornwear/climb-events.html" class="ww-subnav-item">Events</a>
+        <a href="https://eu.patagonia.com/gb/en/our-footprint/" class="ww-subnav-item">Our Footprint</a>
+        <a href="https://eu.patagonia.com/gb/en/stories/culture/worn-wear/" class="ww-subnav-item">Stories</a>
+        <a href="https://eu.patagonia.com/gb/en/worn-wear/#asset-modal-wornwear-recommerce-modal" class="ww-subnav-item">Recommerce</a>
+        <a href="https://eu.patagonia.com/gb/en/why-recycled/" class="ww-subnav-item">Why Recycled?</a>
+      </div>
+    </nav>
+
+    <!-- Marketing Grid — Row 1 -->
+    <section class="ww-grid-section" aria-label="Worn Wear services">
+      <div class="ww-grid">
+
+        <!-- Large tile: If it's broke fix it (main promo) -->
+        <div class="ww-tile ww-tile-large">
+          <img
+            src="https://www.patagonia.com/blog/wp-content/uploads/2023/07/ww-if-its-broke-light-1.png"
+            alt="If It's Broke, Fix It — Worn Wear repair service"
+            loading="lazy"
+            width="1200"
+            height="750"
+          >
+          <div class="ww-tile-overlay" aria-hidden="true"></div>
+          <div class="ww-tile-content">
+            <p class="ww-tile-label">Repairs</p>
+            <h3>If It's Broke,<br>Fix It</h3>
+            <a href="https://customers.eu.patagonia.com/en-US/repairs/" class="btn-tile-rust">Start a Repair</a>
+          </div>
+        </div>
+
+        <!-- Tall tile: In-store repair -->
+        <div class="ww-tile ww-tile-tall">
+          <img
+            src="https://eu.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dw5837ffb1/images/wornwear/davis_brendan_0270_BP-repairs.jpg?q=85&sw=800&"
+            alt="Expert repair technician working on gear"
+            loading="lazy"
+            width="600"
+            height="800"
+          >
+          <div class="ww-tile-overlay" aria-hidden="true"></div>
+          <div class="ww-tile-content">
+            <p class="ww-tile-label">DIY</p>
+            <h3>Repair Guides</h3>
+            <a href="https://eu.patagonia.com/gb/en/product-care/#diy-repair-guides" class="btn-tile-cream">DIY Repair Guides</a>
+          </div>
+        </div>
+
+        <!-- Square tile: in-store repairs -->
+        <div class="ww-tile ww-tile-square">
+          <img
+            src="https://eu.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dweb1e3813/images/wornwear/ww-in-store.jpg?q=85&sw=600&"
+            alt="Patagonia in-store repair service"
+            loading="lazy"
+            width="600"
+            height="600"
+          >
+          <div class="ww-tile-overlay" aria-hidden="true"></div>
+          <div class="ww-tile-content">
+            <h3>Repairs in Retail</h3>
+            <a href="https://eu.patagonia.com/gb/en/worn-wear/#asset-modal-wornwear-repairs-retail-modal" class="btn-tile-cream">Find a Store</a>
+          </div>
+        </div>
+
+        <!-- Square tile: climb events -->
+        <div class="ww-tile ww-tile-square">
+          <img
+            src="https://eu.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dw489424fe/images/wornwear/ww-climb-events-s26.jpg?q=85&sw=600&"
+            alt="Worn Wear climbing events"
+            loading="lazy"
+            width="600"
+            height="600"
+          >
+          <div class="ww-tile-overlay" aria-hidden="true"></div>
+          <div class="ww-tile-content">
+            <h3>Events</h3>
+            <a href="https://eu.patagonia.com/gb/en/wornwear/climb-events.html" class="btn-tile-rust">See Events</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Marketing Grid — Row 2 -->
+    <div class="ww-grid-bottom" aria-label="Worn Wear programmes">
+
+      <!-- Text tile: Our Footprint -->
+      <div class="ww-tile-text">
+        <h3>Let's make things that last longer</h3>
+        <p>And do more with what we already have.</p>
+        <a href="https://eu.patagonia.com/gb/en/our-footprint/" class="btn-tile-cream">Our Footprint</a>
+      </div>
+
+      <!-- Image tile: Stories -->
+      <div class="ww-tile ww-tile-square">
+        <img
+          src="https://eu.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dw4ba6de6b/images/wornwear/ww-stories.jpg?q=85&sw=600&"
+          alt="Worn Wear stories"
+          loading="lazy"
+          width="600"
+          height="600"
+        >
+        <div class="ww-tile-overlay" aria-hidden="true"></div>
+        <div class="ww-tile-content">
+          <h3>Stories</h3>
+          <a href="https://eu.patagonia.com/gb/en/stories/culture/worn-wear/" class="btn-tile-cream">Read Stories</a>
+        </div>
+      </div>
+
+      <!-- Image tile: Recommerce -->
+      <div class="ww-tile ww-tile-square">
+        <img
+          src="https://eu.patagonia.com/dw/image/v2/bdjb_PRD/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dwbfcf60cd/images/wornwear/lagrave_0297-events.jpg?q=85&sw=600&"
+          alt="Worn Wear recommerce programme"
+          loading="lazy"
+          width="600"
+          height="600"
+        >
+        <div class="ww-tile-overlay" aria-hidden="true"></div>
+        <div class="ww-tile-content">
+          <p class="ww-tile-label">Buy Used. Sell Yours.</p>
+          <h3>Recommerce</h3>
+          <a href="https://eu.patagonia.com/gb/en/worn-wear/#asset-modal-wornwear-recommerce-modal" class="btn-tile-rust">Learn More</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Commitment strip -->
+    <div class="commitment-strip">
+      <h2>We Guarantee Everything We Make</h2>
+      <p>If you're not satisfied with one of our products, we'll repair it, replace it, or refund your money. No time limit.</p>
+      <a href="https://eu.patagonia.com/gb/en/ironclad-guarantee.html" class="btn-outline-cream">View Ironclad Guarantee</a>
+    </div>
+
+    <!-- Value propositions -->
+    <div class="ww-values" role="list" aria-label="Patagonia commitments">
+      <div class="ww-value" role="listitem">
+        <img
+          src="https://eu.patagonia.com/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dw03a4d18e/images/customer-service/gen5_custsrv_guarantee-brown.png"
+          alt="Ironclad Guarantee"
+          class="ww-value-icon"
+          loading="lazy"
+          width="44"
+          height="44"
+        >
+        <h4>Ironclad Guarantee</h4>
+        <p>We guarantee everything we make. <a href="https://eu.patagonia.com/gb/en/ironclad-guarantee.html">View Guarantee</a></p>
+      </div>
+      <div class="ww-value" role="listitem">
+        <svg class="ww-value-icon" viewBox="0 0 44 44" fill="none" stroke="#1a1a1a" stroke-width="1.4" aria-hidden="true">
+          <circle cx="22" cy="22" r="18"/>
+          <path d="M14 22c0-4.4 3.6-8 8-8s8 3.6 8 8"/>
+          <path d="M14 22h-4M22 14v-4M30 22h4"/>
+        </svg>
+        <h4>Our Footprint</h4>
+        <p>We take responsibility for our impact. <a href="https://eu.patagonia.com/gb/en/our-footprint/">Explore</a></p>
+      </div>
+      <div class="ww-value" role="listitem">
+        <svg class="ww-value-icon" viewBox="0 0 44 44" fill="none" stroke="#1a1a1a" stroke-width="1.4" aria-hidden="true">
+          <path d="M22 6l4 8.5 9 1.5-6.5 6.5 1.5 9.5L22 27l-8 5 1.5-9.5L9 16l9-1.5z"/>
+        </svg>
+        <h4>Patagonia Action Works</h4>
+        <p>We support grassroots activism. <a href="https://eu.patagonia.com/gb/en/actionworks/">Visit</a></p>
+      </div>
+      <div class="ww-value" role="listitem">
+        <svg class="ww-value-icon" viewBox="0 0 44 44" fill="none" stroke="#1a1a1a" stroke-width="1.4" aria-hidden="true">
+          <path d="M22 38c10-5 16-13 16-20C38 11.7 31 6 22 6S6 11.7 6 18c0 7 6 15 16 20z"/>
+          <path d="M15 22s3 5 7 5 7-5 7-5"/>
+        </svg>
+        <h4>Worn Wear</h4>
+        <p>We keep your gear going. <a href="https://eu.patagonia.com/gb/en/worn-wear/">Visit Worn Wear</a></p>
+      </div>
+      <div class="ww-value" role="listitem">
+        <svg class="ww-value-icon" viewBox="0 0 44 44" fill="none" stroke="#1a1a1a" stroke-width="1.4" aria-hidden="true">
+          <circle cx="22" cy="22" r="16"/>
+          <path d="M22 12v10l7 4"/>
+        </svg>
+        <h4>1% for the Planet</h4>
+        <p>We give our profits to the planet. <a href="https://eu.patagonia.com/gb/en/one-percent-for-the-planet.html">Learn More</a></p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span style="font-size:18px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;">PATAGONIA</span>
+        <p>We're in business to save our home planet. Patagonia donates its profits — time, services and at least 1% of sales — to hundreds of grassroots environmental groups.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Get Help</h5>
+        <ul>
+          <li><a href="https://eu.patagonia.com/gb/en/eu-customer-service.html">Customer Service</a></li>
+          <li><a href="https://eu.patagonia.com/gb/en/delivery.html">Delivery</a></li>
+          <li><a href="https://eu.patagonia.com/gb/en/eu-customer-service-faqs.html">FAQs</a></li>
+          <li><a href="https://eu.patagonia.com/gb/en/product-care/">Repairs</a></li>
+          <li><a href="https://eu.patagonia.com/gb/en/eu-returns.html">Returns</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Information</h5>
+        <ul>
+          <li><a href="https://eu.patagonia.com/gb/en/actionworks/">Action Works</a></li>
+          <li><a href="https://eu.patagonia.com/gb/en/worn-wear/">Worn Wear</a></li>
+          <li><a href="https://eu.patagonia.com/gb/en/our-footprint/">Our Footprint</a></li>
+          <li><a href="https://eu.patagonia.com/gb/en/why-recycled/">Why Recycled?</a></li>
+          <li><a href="https://eu.patagonia.com/gb/en/ironclad-guarantee.html">Ironclad Guarantee</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="https://eu.patagonia.com/gb/en/stories/">Stories</a></li>
+          <li><a href="https://eu.patagonia.com/gb/en/eu-store-locations.html">Find a Store</a></li>
+          <li><a href="https://eu.patagonia.com/gb/en/careers/">Careers</a></li>
+          <li><a href="https://eu.patagonia.com/gb/en/press/">Press</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="https://eu.patagonia.com/gb/en/privacy-policy.html">Privacy Notice</a></li>
+          <li><a href="https://eu.patagonia.com/gb/en/terms-and-conditions.html">Terms &amp; Conditions</a></li>
+          <li><a href="#">Cookie Preferences</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Patagonia, Inc. All Rights Reserved.</span>
+      <span>English</span>
+    </div>
+  </footer>
+
+</body>
+</html>

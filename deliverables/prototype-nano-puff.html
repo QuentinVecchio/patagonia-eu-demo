@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- _provenance: {"source":"eu.patagonia.com/gb/en/product/mens-nano-puff-insulated-jacket/84213.html","capturedAt":"2026-05-22","fidelity":"quick","liveRenderEvidence":true} -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Men's Nano Puff® Packable Insulated Jacket | Patagonia UK</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-black: #000000;
+      --color-white: #FFFFFF;
+      --color-surface: #F5F5F5;
+      --color-product-bg: #f3f4ef;
+      --color-dark: #1a1a1a;
+      --color-muted: #555555;
+      --color-border: #e0e0e0;
+      --color-teal: #27455C;
+      --color-green: #466254;
+      --color-terracotta: #B46E58;
+      --color-cream: #F5F0E0;
+      --font-primary: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+      --max-width: 1440px;
+      --radius-pill: 30px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: var(--font-primary);
+      color: var(--color-dark);
+      background: var(--color-white);
+      font-size: 16px;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+
+    /* ── NAV ── */
+    .nav-announcement {
+      background: var(--color-dark);
+      color: var(--color-white);
+      text-align: center;
+      padding: 10px 24px;
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+    }
+    .nav-announcement a { color: var(--color-white); text-decoration: underline; }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--color-white);
+      border-bottom: 1px solid var(--color-border);
+    }
+    .nav-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 48px;
+      height: 60px;
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+    .nav-logo-text {
+      font-size: 22px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .nav-primary {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+    .nav-primary a {
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: var(--color-dark);
+      padding: 4px 0;
+      border-bottom: 2px solid transparent;
+      transition: border-color 0.15s;
+    }
+    .nav-primary a:hover { border-bottom-color: var(--color-dark); }
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .nav-icon { width: 22px; height: 22px; }
+
+    /* ── BREADCRUMB ── */
+    .breadcrumb {
+      padding: 14px 48px;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      font-size: 12px;
+      color: var(--color-muted);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .breadcrumb a { color: var(--color-muted); }
+    .breadcrumb a:hover { color: var(--color-dark); text-decoration: underline; }
+    .breadcrumb-sep { opacity: 0.4; }
+
+    /* ── PDP LAYOUT ── */
+    .pdp-container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 48px 64px;
+      display: grid;
+      grid-template-columns: 1fr 440px;
+      gap: 48px;
+      align-items: start;
+    }
+
+    /* ── IMAGE GALLERY ── */
+    .gallery {
+      display: grid;
+      grid-template-columns: 80px 1fr;
+      gap: 12px;
+    }
+    .gallery-thumbs {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .gallery-thumb {
+      width: 80px;
+      height: 80px;
+      border: 1.5px solid transparent;
+      cursor: pointer;
+      overflow: hidden;
+      background: var(--color-product-bg);
+      flex-shrink: 0;
+      transition: border-color 0.2s;
+    }
+    .gallery-thumb.active { border-color: var(--color-dark); }
+    .gallery-thumb:hover { border-color: var(--color-muted); }
+    .gallery-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .gallery-main {
+      background: var(--color-product-bg);
+      aspect-ratio: 1;
+      overflow: hidden;
+      position: relative;
+    }
+    .gallery-main img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 16px;
+    }
+
+    /* ── PRODUCT INFO ── */
+    .product-info {
+      padding-top: 8px;
+    }
+    .product-label {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--color-muted);
+      margin-bottom: 8px;
+    }
+    .product-info h1 {
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+      margin-bottom: 10px;
+    }
+    .product-price {
+      font-size: 22px;
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+    .product-rating {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .stars {
+      display: flex;
+      gap: 2px;
+      color: #c8a96c;
+    }
+    .stars svg { width: 16px; height: 16px; }
+    .rating-count {
+      font-size: 13px;
+      color: var(--color-muted);
+    }
+
+    /* Color selector */
+    .product-option-group {
+      margin-bottom: 20px;
+    }
+    .product-option-label {
+      font-size: 13px;
+      font-weight: 500;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .product-option-label span {
+      font-weight: 400;
+      color: var(--color-muted);
+    }
+    .color-swatches {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .color-swatch {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: 2px solid transparent;
+      cursor: pointer;
+      transition: border-color 0.15s, transform 0.15s;
+      position: relative;
+    }
+    .color-swatch:hover { transform: scale(1.12); }
+    .color-swatch.active {
+      border-color: var(--color-dark);
+      box-shadow: 0 0 0 2px var(--color-white), 0 0 0 3.5px var(--color-dark);
+    }
+
+    /* Size selector */
+    .size-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .size-btn {
+      min-width: 52px;
+      height: 44px;
+      border: 1.5px solid var(--color-border);
+      background: var(--color-white);
+      font-family: var(--font-primary);
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: border-color 0.15s, background 0.15s;
+      padding: 0 12px;
+    }
+    .size-btn:hover { border-color: var(--color-dark); }
+    .size-btn.active {
+      background: var(--color-dark);
+      color: var(--color-white);
+      border-color: var(--color-dark);
+    }
+    .size-btn.unavailable {
+      opacity: 0.3;
+      text-decoration: line-through;
+      cursor: not-allowed;
+    }
+
+    .size-guide-link {
+      font-size: 12px;
+      color: var(--color-muted);
+      text-decoration: underline;
+      margin-top: 8px;
+      display: inline-block;
+    }
+
+    /* Add to cart */
+    .add-to-cart-btn {
+      display: block;
+      width: 100%;
+      padding: 16px 24px;
+      background: var(--color-dark);
+      color: var(--color-white);
+      border: none;
+      font-family: var(--font-primary);
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      cursor: pointer;
+      margin: 20px 0 12px;
+      border-radius: var(--radius-pill);
+      transition: background 0.2s;
+    }
+    .add-to-cart-btn:hover { background: #333; }
+    .wishlist-btn {
+      display: block;
+      width: 100%;
+      padding: 14px 24px;
+      background: transparent;
+      color: var(--color-dark);
+      border: 1.5px solid var(--color-dark);
+      font-family: var(--font-primary);
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      cursor: pointer;
+      border-radius: var(--radius-pill);
+      transition: background 0.2s, color 0.2s;
+    }
+    .wishlist-btn:hover { background: var(--color-dark); color: var(--color-white); }
+
+    /* Delivery info */
+    .delivery-info {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 16px 0;
+      border-top: 1px solid var(--color-border);
+      margin-top: 20px;
+      font-size: 13px;
+      color: var(--color-muted);
+    }
+    .delivery-info svg { flex-shrink: 0; width: 20px; height: 20px; }
+
+    /* Product description */
+    .product-desc-section {
+      margin-top: 24px;
+      padding-top: 24px;
+      border-top: 1px solid var(--color-border);
+    }
+    .product-desc-section p {
+      font-size: 14px;
+      line-height: 1.7;
+      color: var(--color-muted);
+    }
+
+    /* Accordions */
+    .accordion-list {
+      margin-top: 24px;
+    }
+    .accordion-item {
+      border-top: 1px solid var(--color-border);
+    }
+    .accordion-item:last-child { border-bottom: 1px solid var(--color-border); }
+    .accordion-trigger {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 16px 0;
+      font-family: var(--font-primary);
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      text-align: left;
+      color: var(--color-dark);
+    }
+    .accordion-icon {
+      width: 20px;
+      height: 20px;
+      transition: transform 0.25s;
+      flex-shrink: 0;
+    }
+    .accordion-item.open .accordion-icon { transform: rotate(45deg); }
+    .accordion-content {
+      display: none;
+      padding: 0 0 16px;
+      font-size: 13px;
+      line-height: 1.7;
+      color: var(--color-muted);
+    }
+    .accordion-item.open .accordion-content { display: block; }
+
+    /* ── SUSTAINABILITY BADGES ── */
+    .sustainability-strip {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 16px;
+    }
+    .sustain-badge {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      background: var(--color-surface);
+      padding: 6px 12px;
+      border-radius: 4px;
+    }
+    .sustain-badge svg { width: 14px; height: 14px; }
+
+    /* ── YOU MAY ALSO LIKE ── */
+    .recommendations {
+      padding: 60px 48px;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      border-top: 1px solid var(--color-border);
+    }
+    .recommendations h2 {
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 32px;
+      letter-spacing: -0.01em;
+    }
+    .rec-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+    .rec-card {
+      display: block;
+    }
+    .rec-card-img {
+      background: var(--color-product-bg);
+      aspect-ratio: 1;
+      overflow: hidden;
+      margin-bottom: 12px;
+    }
+    .rec-card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 12px;
+      transition: transform 0.3s ease;
+    }
+    .rec-card:hover .rec-card-img img { transform: scale(1.04); }
+    .rec-card-name {
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 4px;
+    }
+    .rec-card-color {
+      font-size: 12px;
+      color: var(--color-muted);
+      margin-bottom: 4px;
+    }
+    .rec-card-price {
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    /* ── FOOTER ── */
+    .site-footer {
+      background: var(--color-dark);
+      color: var(--color-white);
+      padding: 64px 48px 40px;
+    }
+    .footer-bottom {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 12px;
+      color: rgba(255,255,255,0.4);
+    }
+
+    /* Responsive */
+    @media (max-width: 1200px) {
+      .pdp-container { grid-template-columns: 1fr 380px; }
+    }
+    @media (max-width: 900px) {
+      .pdp-container { grid-template-columns: 1fr; padding: 0 24px 48px; }
+      .gallery { grid-template-columns: 60px 1fr; }
+      .rec-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 640px) {
+      .nav-top { padding: 0 20px; }
+      .nav-primary { display: none; }
+      .breadcrumb { padding: 12px 20px; }
+      .pdp-container { padding: 0 16px 48px; gap: 32px; }
+      .gallery { grid-template-columns: 56px 1fr; }
+      .recommendations { padding: 40px 20px; }
+      .rec-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="nav-announcement">
+    Free Delivery On Orders Over £90 &nbsp;|&nbsp;
+    <a href="https://eu.patagonia.com/gb/en/delivery.html">Shipping Information</a>
+    &nbsp;|&nbsp;
+    <a href="https://eu.patagonia.com/gb/en/eu-returns.html">Returns Information</a>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="nav-top">
+      <a href="https://eu.patagonia.com/gb/en/home/" class="nav-logo" aria-label="Patagonia Home">
+        <span class="nav-logo-text">PATAGONIA</span>
+      </a>
+      <nav class="nav-primary" aria-label="Primary navigation">
+        <a href="https://eu.patagonia.com/gb/en/home/">Featured</a>
+        <a href="https://eu.patagonia.com/gb/en/shop/womens">Women's</a>
+        <a href="https://eu.patagonia.com/gb/en/shop/mens" style="border-bottom:2px solid #1a1a1a">Men's</a>
+        <a href="https://eu.patagonia.com/gb/en/shop/kids-baby">Kids'</a>
+        <a href="https://eu.patagonia.com/gb/en/shop/packs-gear">Packs</a>
+        <a href="https://eu.patagonia.com/gb/en/sports/">Sports</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="https://eu.patagonia.com/gb/en/search/" aria-label="Search">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="10.5" cy="10.5" r="6.5"/>
+            <line x1="15.5" y1="15.5" x2="22" y2="22"/>
+          </svg>
+        </a>
+        <a href="https://eu.patagonia.com/gb/en/account/" aria-label="Account">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="12" cy="8" r="4"/>
+            <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+          </svg>
+        </a>
+        <a href="https://eu.patagonia.com/gb/en/cart/" aria-label="Shopping cart">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 01-8 0"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="https://eu.patagonia.com/gb/en/home/">Home</a>
+    <span class="breadcrumb-sep" aria-hidden="true">/</span>
+    <a href="https://eu.patagonia.com/gb/en/shop/mens">Men's</a>
+    <span class="breadcrumb-sep" aria-hidden="true">/</span>
+    <a href="https://eu.patagonia.com/gb/en/shop/mens/jackets-vests">Jackets &amp; Vests</a>
+    <span class="breadcrumb-sep" aria-hidden="true">/</span>
+    <a href="https://eu.patagonia.com/gb/en/shop/mens/jackets-vests/insulated">Insulated</a>
+    <span class="breadcrumb-sep" aria-hidden="true">/</span>
+    <span aria-current="page">Men's Nano Puff® Jacket</span>
+  </nav>
+
+  <main id="main">
+    <div class="pdp-container">
+
+      <!-- Left: Image Gallery -->
+      <div class="gallery">
+        <div class="gallery-thumbs" role="listbox" aria-label="Product images">
+          <div class="gallery-thumb active" role="option" aria-selected="true" onclick="setMainImg(this, 'https://eu.patagonia.com/dw/image/v2/BDJB_PRD/on/demandware.static/-/Sites-patagonia-master/default/dw8079c0d9/images/hi-res/84213_BLSG.jpg?sw=1024&sh=1024&sfrm=png&q=90&bgcolor=f3f4ef')">
+            <img src="https://eu.patagonia.com/dw/image/v2/BDJB_PRD/on/demandware.static/-/Sites-patagonia-master/default/dw8079c0d9/images/hi-res/84213_BLSG.jpg?sw=1024&sh=1024&sfrm=png&q=90&bgcolor=f3f4ef" alt="Men's Nano Puff Jacket — Front" loading="eager" fetchpriority="high" width="860" height="860">
+          </div>
+          <div class="gallery-thumb" role="option" aria-selected="false" onclick="setMainImg(this, 'https://eu.patagonia.com/dw/image/v2/BDJB_PRD/on/demandware.static/-/Sites-patagonia-master/default/dwe07ae047/images/hi-res/84213_BLSG_HC1.jpg?sw=1024&sh=1024&sfrm=png&q=90&bgcolor=f3f4ef')">
+            <img src="https://eu.patagonia.com/dw/image/v2/BDJB_PRD/on/demandware.static/-/Sites-patagonia-master/default/dwe07ae047/images/hi-res/84213_BLSG_HC1.jpg?sw=1024&sh=1024&sfrm=png&q=90&bgcolor=f3f4ef" alt="Men's Nano Puff Jacket — Detail 1" loading="lazy" width="860" height="860">
+          </div>
+          <div class="gallery-thumb" role="option" aria-selected="false" onclick="setMainImg(this, 'https://eu.patagonia.com/dw/image/v2/BDJB_PRD/on/demandware.static/-/Sites-patagonia-master/default/dw43d4973c/images/hi-res/84213_BLSG_HC2.jpg?sw=1024&sh=1024&sfrm=png&q=90&bgcolor=f3f4ef')">
+            <img src="https://eu.patagonia.com/dw/image/v2/BDJB_PRD/on/demandware.static/-/Sites-patagonia-master/default/dw43d4973c/images/hi-res/84213_BLSG_HC2.jpg?sw=1024&sh=1024&sfrm=png&q=90&bgcolor=f3f4ef" alt="Men's Nano Puff Jacket — Detail 2" loading="lazy" width="860" height="860">
+          </div>
+          <div class="gallery-thumb" role="option" aria-selected="false" onclick="setMainImg(this, 'https://eu.patagonia.com/dw/image/v2/BDJB_PRD/on/demandware.static/-/Sites-patagonia-master/default/dw745a0bd9/images/hi-res/84213_BLSG_HC3.jpg?sw=1024&sh=1024&sfrm=png&q=90&bgcolor=f3f4ef')">
+            <img src="https://eu.patagonia.com/dw/image/v2/BDJB_PRD/on/demandware.static/-/Sites-patagonia-master/default/dw745a0bd9/images/hi-res/84213_BLSG_HC3.jpg?sw=1024&sh=1024&sfrm=png&q=90&bgcolor=f3f4ef" alt="Men's Nano Puff Jacket — Detail 3" loading="lazy" width="860" height="860">
+          </div>
+        </div>
+
+        <div class="gallery-main" aria-live="polite" aria-label="Product main image">
+          <img
+            id="gallery-main-img"
+            src="https://eu.patagonia.com/dw/image/v2/BDJB_PRD/on/demandware.static/-/Sites-patagonia-master/default/dw8079c0d9/images/hi-res/84213_BLSG.jpg?sw=1024&sh=1024&sfrm=png&q=90&bgcolor=f3f4ef"
+            alt="Men's Nano Puff® Jacket — Blue Sage"
+            loading="eager"
+            fetchpriority="high"
+            width="860"
+            height="860"
+          >
+        </div>
+      </div>
+
+      <!-- Right: Product Info -->
+      <div class="product-info">
+        <p class="product-label">Men's</p>
+        <h1>Men's Nano Puff® Jacket</h1>
+        <p class="product-price">£170</p>
+
+        <div class="product-rating">
+          <div class="stars" aria-label="4.6 out of 5 stars">
+            <!-- 4.6 stars -->
+            <svg viewBox="0 0 16 16" fill="#c8a96c"><path d="M8 1l1.96 3.93L14 5.87l-3 2.9.7 4.13L8 10.77 4.3 12.9l.7-4.13-3-2.9 4.04-.94z"/></svg>
+            <svg viewBox="0 0 16 16" fill="#c8a96c"><path d="M8 1l1.96 3.93L14 5.87l-3 2.9.7 4.13L8 10.77 4.3 12.9l.7-4.13-3-2.9 4.04-.94z"/></svg>
+            <svg viewBox="0 0 16 16" fill="#c8a96c"><path d="M8 1l1.96 3.93L14 5.87l-3 2.9.7 4.13L8 10.77 4.3 12.9l.7-4.13-3-2.9 4.04-.94z"/></svg>
+            <svg viewBox="0 0 16 16" fill="#c8a96c"><path d="M8 1l1.96 3.93L14 5.87l-3 2.9.7 4.13L8 10.77 4.3 12.9l.7-4.13-3-2.9 4.04-.94z"/></svg>
+            <svg viewBox="0 0 16 16" fill="none" stroke="#c8a96c" stroke-width="1">
+              <path d="M8 1l1.96 3.93L14 5.87l-3 2.9.7 4.13L8 10.77 4.3 12.9l.7-4.13-3-2.9 4.04-.94z"/>
+              <path d="M8 1v9.77" fill="#c8a96c" clip-path="inset(0 40% 0 0)"/>
+              <path d="M8 1l1.96 3.93L14 5.87l-3 2.9.7 4.13L8 10.77" fill="#c8a96c"/>
+            </svg>
+          </div>
+          <a href="#reviews" class="rating-count">4.6 / 5 — 2017 Reviews</a>
+        </div>
+
+        <!-- Color -->
+        <div class="product-option-group">
+          <p class="product-option-label">Color: <span>Blue Sage</span></p>
+          <div class="color-swatches" role="listbox" aria-label="Select color">
+            <div class="color-swatch active" role="option" aria-selected="true" aria-label="Blue Sage" title="Blue Sage (BLSG)" style="background-color: rgb(108, 127, 133);"></div>
+            <div class="color-swatch" role="option" aria-selected="false" aria-label="Smolder Blue" title="Smolder Blue (SMDB)" style="background-color: rgb(40, 50, 67);"></div>
+            <div class="color-swatch" role="option" aria-selected="false" aria-label="Forge Grey" title="Forge Grey (FGE)" style="background-color: rgb(54, 55, 51);"></div>
+            <div class="color-swatch" role="option" aria-selected="false" aria-label="Old Growth Green" title="Old Growth Green (OLGG)" style="background-color: rgb(41, 47, 40);"></div>
+            <div class="color-swatch" role="option" aria-selected="false" aria-label="Black" title="Black (BLK)" style="background-color: rgb(25, 23, 24);"></div>
+          </div>
+        </div>
+
+        <!-- Size -->
+        <div class="product-option-group">
+          <p class="product-option-label">Size: <span>Select a size</span></p>
+          <div class="size-grid" role="listbox" aria-label="Select size">
+            <button class="size-btn" role="option" aria-selected="false">XS</button>
+            <button class="size-btn" role="option" aria-selected="false">S</button>
+            <button class="size-btn active" role="option" aria-selected="true">M</button>
+            <button class="size-btn" role="option" aria-selected="false">L</button>
+            <button class="size-btn" role="option" aria-selected="false">XL</button>
+            <button class="size-btn" role="option" aria-selected="false">XXL</button>
+          </div>
+          <a href="https://eu.patagonia.com/gb/en/size-charts.html" class="size-guide-link">Find My Size / Size Guide</a>
+        </div>
+
+        <!-- Add to Cart -->
+        <button class="add-to-cart-btn" type="button">Add to Cart — £170</button>
+        <button class="wishlist-btn" type="button">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="display:inline;vertical-align:middle;margin-right:6px" aria-hidden="true">
+            <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+          </svg>
+          Save to Wishlist
+        </button>
+
+        <!-- Delivery info -->
+        <div class="delivery-info">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <rect x="1" y="3" width="15" height="13" rx="1"/>
+            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+            <circle cx="5.5" cy="18.5" r="2.5"/>
+            <circle cx="18.5" cy="18.5" r="2.5"/>
+          </svg>
+          <span>Free delivery on orders over £90. <a href="https://eu.patagonia.com/gb/en/delivery.html" style="text-decoration:underline">More Details</a></span>
+        </div>
+
+        <!-- Short description -->
+        <div class="product-desc-section">
+          <p>We built the Nano Puff® Jacket for climbers who needed a weather-resistant, lightweight and packable synthetic insulation layer that could stay warm even when wet and withstand seasons of use. With 60-g PrimaLoft® Gold Insulation Eco with P.U.R.E.™ technology, and a 100% recycled shell.</p>
+        </div>
+
+        <!-- Sustainability badges -->
+        <div class="sustainability-strip">
+          <div class="sustain-badge">
+            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><circle cx="7" cy="7" r="6"/><path d="M5 7l2 2 3-3"/></svg>
+            100% Recycled Shell
+          </div>
+          <div class="sustain-badge">
+            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><circle cx="7" cy="7" r="6"/><path d="M5 7l2 2 3-3"/></svg>
+            PrimaLoft® Eco
+          </div>
+          <div class="sustain-badge">
+            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><circle cx="7" cy="7" r="6"/><path d="M5 7l2 2 3-3"/></svg>
+            Fair Trade Certified™
+          </div>
+        </div>
+
+        <!-- Accordions -->
+        <div class="accordion-list">
+          <div class="accordion-item open">
+            <button class="accordion-trigger" aria-expanded="true" onclick="toggleAccordion(this)">
+              Fit
+              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="accordion-content">
+              <p>Regular fit. Designed for layering. Slightly longer front hem. Hip-length cut for easy movement.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false" onclick="toggleAccordion(this)">
+              Specs &amp; Features
+              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="accordion-content">
+              <ul style="padding-left:16px;margin-top:8px;">
+                <li>Shell: 1.3-oz 20-denier 100% recycled polyester ripstop with DWR finish</li>
+                <li>Insulation: 60-g PrimaLoft® Gold Insulation Eco with P.U.R.E.™ technology</li>
+                <li>Lining: 1.4-oz 20-denier 100% recycled polyester</li>
+                <li>Weight: 340g (M)</li>
+                <li>Packable into its own left-hand chest pocket</li>
+                <li>Two zippered hand pockets</li>
+                <li>Internal chest pocket</li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false" onclick="toggleAccordion(this)">
+              Materials &amp; Care Instructions
+              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="accordion-content">
+              <p>Machine wash cold, gentle cycle. Do not bleach. Tumble dry low. Do not iron. Do not dry clean.</p>
+              <p style="margin-top:8px">Shell and lining made from 100% postconsumer recycled polyester with PFC-free DWR finish.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ironclad Guarantee -->
+        <div style="display:flex;align-items:flex-start;gap:12px;padding:20px 0;border-top:1px solid var(--color-border);margin-top:8px;">
+          <img src="https://eu.patagonia.com/on/demandware.static/-/Library-Sites-PatagoniaShared/default/dw03a4d18e/images/customer-service/gen5_custsrv_guarantee-brown.png" alt="Ironclad Guarantee" width="40" height="40" style="flex-shrink:0;width:40px;height:40px;object-fit:contain;" loading="lazy">
+          <div>
+            <p style="font-size:13px;font-weight:600;margin-bottom:4px;">Ironclad Guarantee</p>
+            <p style="font-size:12px;color:var(--color-muted);">We guarantee everything we make. If you are not satisfied with one of our products at the time you receive it, or if one of our products does not perform to your satisfaction, <a href="https://eu.patagonia.com/gb/en/ironclad-guarantee.html" style="text-decoration:underline">return it to us</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recommendations -->
+    <section class="recommendations" id="recommendations" aria-label="You may also like">
+      <h2>You May Also Like</h2>
+      <div class="rec-grid">
+        <a href="https://eu.patagonia.com/gb/en/product/mens-nano-puff-hoody/84223.html" class="rec-card">
+          <div class="rec-card-img">
+            <img src="https://eu.patagonia.com/dw/image/v2/BDJB_PRD/on/demandware.static/-/Sites-patagonia-master/default/dwf8ce7ced/images/hi-res/84223_GEMG.jpg?sw=768&sh=768&sfrm=png&q=95&bgcolor=f3f4ef" alt="M's Nano Puff® Hoody" loading="lazy" width="688" height="688">
+          </div>
+          <p class="rec-card-name">M's Nano Puff® Hoody</p>
+          <p class="rec-card-color">Gem Green</p>
+          <p class="rec-card-price">£195</p>
+        </a>
+        <a href="https://eu.patagonia.com/gb/en/product/mens-down-sweater-jacket/84675.html" class="rec-card">
+          <div class="rec-card-img">
+            <img src="https://eu.patagonia.com/dw/image/v2/BDJB_PRD/on/demandware.static/-/Sites-patagonia-master/default/dw3c83e113/images/hi-res/84675_CLOR.jpg?sw=768&sh=768&sfrm=png&q=95&bgcolor=f3f4ef" alt="M's Down Sweater™" loading="lazy" width="688" height="688">
+          </div>
+          <p class="rec-card-name">M's Down Sweater™</p>
+          <p class="rec-card-color">Coal Orange</p>
+          <p class="rec-card-price">£189</p>
+        </a>
+        <a href="https://eu.patagonia.com/gb/en/product/mens-micro-puff-jacket/84066.html" class="rec-card">
+          <div class="rec-card-img">
+            <img src="https://eu.patagonia.com/dw/image/v2/BDJB_PRD/on/demandware.static/-/Sites-patagonia-master/default/dwe5f9a922/images/hi-res/84066_CLMB.jpg?sw=768&sh=768&sfrm=png&q=95&bgcolor=f3f4ef" alt="M's Micro Puff® Jacket" loading="lazy" width="688" height="688">
+          </div>
+          <p class="rec-card-name">M's Micro Puff® Jacket</p>
+          <p class="rec-card-color">Clement Blue</p>
+          <p class="rec-card-price">£219</p>
+        </a>
+        <a href="https://eu.patagonia.com/gb/en/product/mens-down-sweater-hoody/84702.html" class="rec-card">
+          <div class="rec-card-img">
+            <img src="https://eu.patagonia.com/dw/image/v2/BDJB_PRD/on/demandware.static/-/Sites-patagonia-master/default/dwe6840122/images/hi-res/84702_FEG.jpg?sw=768&sh=768&sfrm=png&q=95&bgcolor=f3f4ef" alt="M's Down Sweater™ Hoody" loading="lazy" width="688" height="688">
+          </div>
+          <p class="rec-card-name">M's Down Sweater™ Hoody</p>
+          <p class="rec-card-color">Forge Grey</p>
+          <p class="rec-card-price">£219</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-bottom">
+      <span>© 2026 Patagonia, Inc. All Rights Reserved.</span>
+      <span>English</span>
+    </div>
+  </footer>
+
+  <script>
+    function setMainImg(thumb, src) {
+      const mainImg = document.getElementById('gallery-main-img');
+      mainImg.src = src;
+      document.querySelectorAll('.gallery-thumb').forEach(t => {
+        t.classList.remove('active');
+        t.setAttribute('aria-selected', 'false');
+      });
+      thumb.classList.add('active');
+      thumb.setAttribute('aria-selected', 'true');
+    }
+
+    function toggleAccordion(trigger) {
+      const item = trigger.closest('.accordion-item');
+      const isOpen = item.classList.contains('open');
+      // Close all
+      document.querySelectorAll('.accordion-item').forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.accordion-trigger').setAttribute('aria-expanded', 'false');
+      });
+      // Open clicked if was closed
+      if (!isOpen) {
+        item.classList.add('open');
+        trigger.setAttribute('aria-expanded', 'true');
+      }
+    }
+
+    // Color swatch interactivity
+    document.querySelectorAll('.color-swatch').forEach(swatch => {
+      swatch.addEventListener('click', () => {
+        document.querySelectorAll('.color-swatch').forEach(s => {
+          s.classList.remove('active');
+          s.setAttribute('aria-selected', 'false');
+        });
+        swatch.classList.add('active');
+        swatch.setAttribute('aria-selected', 'true');
+        const colorLabel = swatch.closest('.product-option-group').querySelector('.product-option-label span');
+        if (colorLabel) colorLabel.textContent = swatch.getAttribute('title').split(' (')[0];
+      });
+    });
+
+    // Size btn interactivity
+    document.querySelectorAll('.size-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.size-btn').forEach(b => {
+          b.classList.remove('active');
+          b.setAttribute('aria-selected', 'false');
+        });
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected', 'true');
+        const sizeLabel = btn.closest('.product-option-group').querySelector('.product-option-label span');
+        if (sizeLabel) sizeLabel.textContent = btn.textContent.trim();
+      });
+    });
+  </script>
+</body>
+</html>
