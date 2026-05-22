@@ -1,0 +1,146 @@
+/* ── WORN WEAR GRID ── */
+.ww-grid {
+  padding: 0 !important;
+  max-width: 100% !important;
+}
+
+.ww-grid-inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+  background: var(--color-border);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.ww-tile {
+  position: relative;
+  overflow: hidden;
+  background: var(--color-dark);
+}
+.ww-tile picture,
+.ww-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.ww-tile:hover picture img,
+.ww-tile:hover > img { transform: scale(1.04); }
+
+.ww-tile-large {
+  grid-column: span 2;
+  aspect-ratio: 16/10;
+}
+.ww-tile-tall {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+.ww-tile-square { aspect-ratio: 1; }
+.ww-tile-wide {
+  grid-column: span 2;
+  aspect-ratio: 16/9;
+}
+
+.ww-tile-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, transparent 55%);
+}
+.ww-tile-content {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  right: 24px;
+  color: var(--color-white);
+  z-index: 2;
+}
+.ww-tile-label {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ww-cream);
+  margin: 0 0 6px;
+}
+.ww-tile-content h3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.25;
+  margin: 0 0 12px;
+  color: var(--color-white);
+}
+.ww-tile-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+
+/* Tile CTA buttons */
+.ww-tile-actions a.button {
+  padding: 10px 22px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border-radius: var(--radius-pill);
+  border: none;
+}
+/* Primary (strong) = rust */
+.ww-tile-actions a.button.primary {
+  background: var(--ww-rust);
+  border-color: var(--ww-rust);
+  color: var(--color-white);
+}
+.ww-tile-actions a.button.primary:hover { background: #c44e2e; border-color: #c44e2e; }
+/* Secondary (em) = cream */
+.ww-tile-actions a.button.secondary {
+  background: var(--ww-cream);
+  border-color: var(--ww-cream);
+  color: var(--ww-brown);
+}
+.ww-tile-actions a.button.secondary:hover { background: #f0c490; border-color: #f0c490; }
+
+/* Text-only tile */
+.ww-tile-text {
+  background: var(--ww-brown);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 32px;
+  color: var(--ww-cream);
+  aspect-ratio: 1;
+}
+.ww-tile-text h3 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.3;
+  margin: 0 0 16px;
+  color: var(--ww-cream);
+}
+.ww-tile-text p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.6;
+  opacity: 0.8;
+  margin: 0 0 20px;
+}
+.ww-tile-text .ww-tile-actions a.button.secondary {
+  background: var(--ww-cream);
+  color: var(--ww-brown);
+}
+
+@media (max-width: 1024px) {
+  .ww-grid-inner { grid-template-columns: repeat(2, 1fr); }
+  .ww-tile-large,
+  .ww-tile-wide { grid-column: span 2; }
+}
+@media (max-width: 768px) {
+  .ww-tile-tall { grid-row: span 1; }
+}
+@media (max-width: 640px) {
+  .ww-grid-inner { grid-template-columns: 1fr; gap: 2px; }
+  .ww-tile-large,
+  .ww-tile-tall,
+  .ww-tile-wide,
+  .ww-tile-square { grid-column: span 1; grid-row: span 1; aspect-ratio: 4/3; }
+}

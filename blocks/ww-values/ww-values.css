@@ -1,0 +1,53 @@
+/* ── WW VALUES ── */
+.ww-values {
+  padding: 0 !important;
+  max-width: 100% !important;
+}
+
+.ww-values-inner {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  background: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+}
+
+.ww-value {
+  padding: 40px 28px;
+  border-right: 1px solid var(--color-border);
+  text-align: center;
+}
+.ww-value:last-child { border-right: none; }
+.ww-value-icon {
+  width: 44px;
+  height: 44px;
+  margin: 0 auto 12px;
+}
+.ww-value-icon img,
+.ww-value-icon svg {
+  width: 44px;
+  height: 44px;
+}
+.ww-value h4 {
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+.ww-value p {
+  font-size: 12px;
+  color: var(--color-muted);
+  line-height: 1.5;
+  margin: 0;
+}
+.ww-value a {
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: underline;
+  color: var(--color-dark);
+}
+
+@media (max-width: 1024px) {
+  .ww-values-inner { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 768px) {
+  .ww-values-inner { grid-template-columns: repeat(2, 1fr); }
+}

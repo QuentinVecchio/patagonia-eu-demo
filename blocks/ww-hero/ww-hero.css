@@ -1,0 +1,78 @@
+/* ── WORN WEAR HERO ── */
+.ww-hero {
+  padding: 0 !important;
+  max-width: 100% !important;
+}
+
+.ww-hero-inner {
+  position: relative;
+  height: 88vh;
+  min-height: 560px;
+  overflow: hidden;
+  background: var(--ww-brown);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ww-hero-bg {
+  position: absolute;
+  inset: 0;
+  background: var(--ww-brown);
+}
+.ww-hero-bg picture,
+.ww-hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.55;
+  display: block;
+}
+.ww-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 0 40px;
+  max-width: 700px;
+  color: var(--color-white);
+}
+.ww-logo {
+  max-width: 380px;
+  width: 100%;
+  margin: 0 auto 24px;
+}
+.ww-logo picture,
+.ww-logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.ww-hero-tagline {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.55;
+  color: var(--ww-cream);
+  margin: 0 auto;
+  max-width: 560px;
+}
+.ww-hero-caret {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255,255,255,0.6);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .ww-hero-caret {
+    animation: ww-bounce 1.6s ease-in-out infinite;
+  }
+}
+@keyframes ww-bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(6px); }
+}
+
+@media (max-width: 768px) {
+  .ww-hero-inner { height: 75vh; }
+  .ww-logo { max-width: 260px; }
+  .ww-hero-tagline { font-size: 15px; }
+}

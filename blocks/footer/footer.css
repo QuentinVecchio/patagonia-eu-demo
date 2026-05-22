@@ -1,20 +1,89 @@
-footer {
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-xs);
+/* ── PATAGONIA FOOTER ── */
+
+.footer {
+  background: var(--color-dark);
+  color: var(--color-white);
+  padding: 64px 48px 40px;
 }
 
-footer .footer > div {
-  margin: auto;
-  max-width: 1200px;
-  padding: 40px 24px 24px;
+/* footer.js dumps fragment sections into a wrapper div inside .footer */
+.footer > div {
+  max-width: var(--max-width);
+  margin: 0 auto;
 }
 
-footer .footer p {
+/* Section layout — footer.js wraps fragment sections as direct children */
+.footer > div > .section {
+  display: contents;
+}
+
+/* Grid for all direct content sections (brand + 4 link cols) */
+.footer > div {
+  display: grid;
+  grid-template-columns: 2fr repeat(4, 1fr);
+  gap: 48px;
+  margin-bottom: 48px;
+}
+
+/* Brand column (first section) */
+.footer > div > .section:first-child .default-content-wrapper h3,
+.footer > div > .default-content-wrapper:first-child h3 {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-white);
+  margin: 0 0 12px;
+}
+.footer > div > .section:first-child .default-content-wrapper p,
+.footer > div > .default-content-wrapper:first-child p {
+  font-size: 13px;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.6;
   margin: 0;
+  max-width: 280px;
 }
 
-@media (width >= 900px) {
-  footer .footer > div {
-    padding: 40px 32px 24px;
+/* Link columns */
+.footer .default-content-wrapper h5 {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+  margin: 0 0 16px;
+}
+.footer .default-content-wrapper ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer .default-content-wrapper ul li {
+  margin-bottom: 10px;
+}
+.footer .default-content-wrapper ul li a {
+  font-size: 13px;
+  color: rgba(255,255,255,0.75);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.footer .default-content-wrapper ul li a:hover {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 1024px) {
+  .footer > div {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    padding: 48px 24px 32px;
+  }
+  .footer > div {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
   }
 }
