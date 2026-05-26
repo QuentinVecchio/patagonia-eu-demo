@@ -24,6 +24,7 @@ function convertTextToImages(block) {
 }
 
 export default function decorate(block) {
+  if (block.closest('.generated-section')) return;
   convertTextToImages(block);
 
   /* change to ul, li */

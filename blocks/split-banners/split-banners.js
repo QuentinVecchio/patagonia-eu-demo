@@ -31,6 +31,7 @@ function convertTextToImages(block) {
 }
 
 export default async function decorate(block) {
+  if (block.closest('.generated-section')) return;
   convertTextToImages(block);
 
   const rows = [...block.children];
