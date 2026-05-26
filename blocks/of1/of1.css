@@ -1245,14 +1245,17 @@
   align-items: center;
   gap: 12px;
   margin-top: 0;
+  width: 100%;
 }
 
 .suggestion-custom {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   width: 100%;
-  max-width: 560px;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .suggestion-input {
