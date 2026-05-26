@@ -35,7 +35,7 @@ function convertTextToImages(block) {
 }
 
 export default async function decorate(block) {
-  if (block.closest('.generated-section')) return;
+  const isGenerated = block.closest('.generated-section');
   const rows = [...block.children];
   if (!rows.length) return;
 
@@ -54,7 +54,7 @@ export default async function decorate(block) {
     return link?.href || '#';
   });
 
-  convertTextToImages(block);
+  if (!isGenerated) convertTextToImages(block);
 
   const inner = document.createElement('div');
   inner.className = 'rec-inner';

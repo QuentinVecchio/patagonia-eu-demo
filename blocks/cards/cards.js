@@ -24,8 +24,8 @@ function convertTextToImages(block) {
 }
 
 export default function decorate(block) {
-  if (block.closest('.generated-section')) return;
-  convertTextToImages(block);
+  const isGenerated = block.closest('.generated-section');
+  if (!isGenerated) convertTextToImages(block);
 
   /* change to ul, li */
   const ul = document.createElement('ul');
@@ -38,6 +38,8 @@ export default function decorate(block) {
     });
     ul.append(li);
   });
-  ul.querySelectorAll('picture > img').forEach((img) => img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }])));
+  if (!isGenerated) {
+    ul.querySelectorAll('picture > img').forEach((img) => img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }])));
+  }
   block.replaceChildren(ul);
 }
