@@ -108,7 +108,13 @@ function renderSuggestions(suggestions, config, block) {
   const inner = document.createElement('div');
   inner.className = 'suggestion-input-row';
 
-  // Search bar first
+  // "Keep exploring" header
+  const header = document.createElement('div');
+  header.className = 'suggestions-header';
+  header.innerHTML = '<span>Keep exploring</span>';
+  inner.appendChild(header);
+
+  // Search bar
   const customInput = document.createElement('div');
   customInput.className = 'suggestion-custom';
   customInput.innerHTML = `
@@ -117,12 +123,7 @@ function renderSuggestions(suggestions, config, block) {
   `;
   inner.appendChild(customInput);
 
-  // Then suggestion chips
-  const header = document.createElement('div');
-  header.className = 'suggestions-header';
-  header.innerHTML = '<span>Keep exploring</span>';
-  inner.appendChild(header);
-
+  // Suggestion chips + Start over
   const buttons = document.createElement('div');
   buttons.className = 'suggestions-buttons';
   suggestions.forEach((sug) => {
@@ -136,16 +137,16 @@ function renderSuggestions(suggestions, config, block) {
     });
     buttons.appendChild(btn);
   });
-  inner.appendChild(buttons);
 
-  // Start over last
   const restartBtn = document.createElement('button');
   restartBtn.className = 'suggestion-restart';
   restartBtn.innerHTML = `${RESTART_SVG}<span>Start over</span>`;
   restartBtn.addEventListener('click', () => {
     window.location.href = window.location.pathname;
   });
-  inner.appendChild(restartBtn);
+  buttons.appendChild(restartBtn);
+
+  inner.appendChild(buttons);
 
   container.appendChild(inner);
 
