@@ -1,0 +1,175 @@
+[
+  {
+    "id": "mens-nano-puff-jacket",
+    "name": "Men's Nano Puff Jacket",
+    "category": "Insulated Jackets",
+    "price": 170,
+    "currency": "GBP",
+    "images": [
+      "https://eu.patagonia.com/dw/image/v2/BDJB_PRD/on/demandware.static/-/Sites-patagonia-master/default/dw3898a537/images/hi-res/84213_SMDB.jpg?sw=1400&sh=1400&sfrm=png&q=90&bgcolor=f3f4ef",
+      "https://eu.patagonia.com/dw/image/v2/BDJB_PRD/on/demandware.static/-/Sites-patagonia-master/default/dwd54245bb/images/hi-res/84213_BLK.jpg?sw=1400&sh=1400&sfrm=png&q=90&bgcolor=f3f4ef"
+    ],
+    "url": "https://eu.patagonia.com/gb/en/product/mens-nano-puff-insulated-jacket/84213.html",
+    "description": "The legendary Nano Puff Jacket is a weather-resistant, lightweight and packable synthetic insulation layer built for climbers who need warmth even when wet. With 60-g PrimaLoft Gold Insulation Eco made from 100% postconsumer recycled polyester and P.U.R.E. technology, this is the jacket so many call the magic jacket. Made in a Fair Trade Certified factory.",
+    "features": ["PrimaLoft Gold Insulation Eco", "100% recycled polyester shell", "Windproof", "Water-resistant", "Packable into internal chest pocket", "Fair Trade Certified"],
+    "highlights": "4.6 stars from 2,018 reviews. Windproof, water-resistant, and stays warm when wet.",
+    "persona": "alpine-performance-seeker",
+    "useCase": "alpine-hiking-climbing",
+    "keywords": ["nano puff jacket", "lightweight insulated jacket", "packable jacket", "warm jacket for hiking", "synthetic insulation", "windproof jacket", "three-season jacket", "climbing midlayer", "patagonia nano puff", "recycled jacket", "fair trade jacket", "best insulated jacket"]
+  },
+  {
+    "id": "womens-nano-puff-jacket",
+    "name": "Women's Nano Puff Jacket",
+    "category": "Insulated Jackets",
+    "price": 170,
+    "currency": "GBP",
+    "images": [
+      "https://eu.patagonia.com/dw/image/v2/BDJB_PRD/on/demandware.static/-/Sites-patagonia-master/default/dwbdabaa49/images/hi-res/84218_SMDB.jpg?sw=1400&sh=1400&sfrm=png&q=90&bgcolor=f3f4ef",
+      "https://eu.patagonia.com/dw/image/v2/BDJB_PRD/on/demandware.static/-/Sites-patagonia-master/default/dw065ab012/images/hi-res/84218_BLK.jpg?sw=1400&sh=1400&sfrm=png&q=90&bgcolor=f3f4ef"
+    ],
+    "url": "https://eu.patagonia.com/gb/en/product/womens-nano-puff-insulated-jacket/84218.html",
+    "description": "The Women's Nano Puff Jacket delivers warm, windproof, water-resistant performance with lightweight, compressible insulation for packability. Built with 60-g PrimaLoft Gold Insulation Eco using P.U.R.E. technology for reduced emissions, this versatile midlayer is an uncontested favourite for any outdoor pursuit. Made in a Fair Trade Certified factory.",
+    "features": ["PrimaLoft Gold Insulation Eco", "100% recycled polyester", "Windproof", "Water-resistant", "Compressible", "Fair Trade Certified"],
+    "highlights": "4.6 stars from 1,967 reviews. The go-to midlayer for women who hike, climb, and travel.",
+    "persona": "everyday-outdoor-enthusiast",
+    "useCase": "everyday-layering-commuting",
+    "keywords": ["womens nano puff", "womens insulated jacket", "lightweight warm jacket women", "packable jacket women", "patagonia womens jacket", "hiking jacket women", "synthetic insulation women", "recycled jacket women", "best midlayer women", "windproof jacket women"]
+  },
+  {
+    "id": "mens-torrentshell-3l-jacket",
+    "name": "Men's Torrentshell 3L Rain Jacket",
+    "category": "Waterproof Jackets",
+    "price": 180,
+    "currency": "GBP",
+    "images": [
+      "https://eu.patagonia.com/dw/image/v2/BDJB_PRD/on/demandware.static/-/Sites-patagonia-master/default/dw4ab40198/images/hi-res/85241_SMDB.jpg?sw=1400&sh=1400&sfrm=png&q=90&bgcolor=f3f4ef",
+      "https://eu.patagonia.com/dw/image/v2/BDJB_PRD/on/demandware.static/-/Sites-patagonia-master/default/dwf34f5e67/images/hi-res/85241_BLK.jpg?sw=1400&sh=1400&sfrm=png&q=90&bgcolor=f3f4ef"
+    ],
+    "url": "https://eu.patagonia.com/gb/en/product/mens-torrentshell-3-layer-rain-jacket/85241.html",
+    "description": "Simple and unpretentious, the Torrentshell 3L Rain Jacket meets Patagonia's H2No Performance Standard for exceptional waterproof and breathable protection. This trusted 3-layer shell provides all-day comfort and long-lasting durability, with fabric, membrane and DWR finish made without intentionally added PFAS. Made in a Fair Trade Certified factory.",
+    "features": ["H2No Performance Standard", "3-layer waterproof/breathable", "PFAS-free DWR finish", "Fully seam-sealed", "Adjustable hood", "Fair Trade Certified"],
+    "highlights": "4.6 stars from 896 reviews. Trusted wet-weather protection without PFAS chemicals.",
+    "persona": "everyday-outdoor-enthusiast",
+    "useCase": "wet-weather-protection",
+    "keywords": ["rain jacket", "waterproof jacket", "torrentshell jacket", "breathable rain jacket", "3 layer rain jacket", "hiking rain jacket", "patagonia rain jacket", "PFAS free jacket", "best waterproof jacket UK", "commuter rain jacket", "lightweight rain shell"]
+  },
+  {
+    "id": "mens-houdini-wind-jacket",
+    "name": "Men's Houdini Wind Jacket",
+    "category": "Wind Jackets",
+    "price": 100,
+    "currency": "GBP",
+    "images": [
+      "https://eu.patagonia.com/dw/image/v2/BDJB_PRD/on/demandware.static/-/Sites-patagonia-master/default/dw9e5c5e5c/images/hi-res/24142_BLK.jpg?sw=1400&sh=1400&sfrm=png&q=90&bgcolor=f3f4ef"
+    ],
+    "url": "https://eu.patagonia.com/gb/en/product/mens-houdini-wind-jacket/24142.html",
+    "description": "The featherlight Houdini Wind Jacket weighs just 105g and stuffs into its own chest pocket, making it the ultimate emergency wind and light rain layer for trail runners, cyclists and fast-moving alpinists. Made from 100% recycled ripstop nylon with a DWR finish, it disappears into your pack until the wind picks up.",
+    "features": ["Ultralight 105g", "100% recycled nylon ripstop", "Packable into chest pocket", "DWR finish", "Carabiner clip loop", "Fair Trade Certified"],
+    "highlights": "970+ reviews. The original ultralight wind shell that started it all.",
+    "persona": "travel-adventure-minimalist",
+    "useCase": "multi-sport-versatility",
+    "keywords": ["wind jacket", "ultralight jacket", "packable wind shell", "houdini jacket", "running jacket", "cycling jacket", "lightweight windbreaker", "emergency shell", "trail running jacket", "patagonia houdini"]
+  },
+  {
+    "id": "mens-nano-puff-hoody",
+    "name": "Men's Nano Puff Hoody",
+    "category": "Insulated Jackets",
+    "price": 210,
+    "currency": "GBP",
+    "images": [
+      "https://eu.patagonia.com/dw/image/v2/BDJB_PRD/on/demandware.static/-/Sites-patagonia-master/default/dw5a9b5b3d/images/hi-res/84222_BLK.jpg?sw=1400&sh=1400&sfrm=png&q=90&bgcolor=f3f4ef"
+    ],
+    "url": "https://eu.patagonia.com/gb/en/product/mens-nano-puff-insulated-hoody/84222.html",
+    "description": "The Nano Puff Hoody adds a hood to Patagonia's best-selling synthetic insulation jacket for extra warmth and protection during alpine pursuits. With the same 60-g PrimaLoft Gold Insulation Eco and 100% recycled shell, plus an insulated, helmet-compatible hood that seals out wind and weather at exposed belays.",
+    "features": ["PrimaLoft Gold Insulation Eco", "Insulated hood", "Helmet-compatible", "100% recycled shell", "Packable", "Fair Trade Certified"],
+    "highlights": "A hooded version of the best-selling Nano Puff for maximum alpine versatility.",
+    "persona": "alpine-performance-seeker",
+    "useCase": "alpine-hiking-climbing",
+    "keywords": ["nano puff hoody", "insulated hoody", "hooded insulated jacket", "climbing hoody", "alpine jacket with hood", "warm hoody hiking", "patagonia nano puff hoody", "synthetic hoody"]
+  },
+  {
+    "id": "mens-nano-puff-vest",
+    "name": "Men's Nano Puff Vest",
+    "category": "Insulated Jackets",
+    "price": 140,
+    "currency": "GBP",
+    "images": [
+      "https://eu.patagonia.com/dw/image/v2/BDJB_PRD/on/demandware.static/-/Sites-patagonia-master/default/dw2e1dbca2/images/hi-res/84242_BLK.jpg?sw=1400&sh=1400&sfrm=png&q=90&bgcolor=f3f4ef"
+    ],
+    "url": "https://eu.patagonia.com/gb/en/product/mens-nano-puff-insulated-vest/84242.html",
+    "description": "The Nano Puff Vest delivers core warmth without restricting arm movement, making it ideal for active pursuits like climbing, cycling and running in cool conditions. Built with 60-g PrimaLoft Gold Insulation Eco and a windproof, water-resistant recycled polyester shell.",
+    "features": ["PrimaLoft Gold Insulation Eco", "Windproof", "Water-resistant", "Full arm mobility", "100% recycled shell", "Fair Trade Certified"],
+    "highlights": "Core warmth with full arm freedom for active pursuits.",
+    "persona": "everyday-outdoor-enthusiast",
+    "useCase": "everyday-layering-commuting",
+    "keywords": ["nano puff vest", "insulated vest", "gilet", "body warmer", "climbing vest", "cycling vest", "patagonia vest", "layering vest", "lightweight vest"]
+  },
+  {
+    "id": "mens-better-sweater-fleece",
+    "name": "Men's Better Sweater Fleece Jacket",
+    "category": "Fleece",
+    "price": 120,
+    "currency": "GBP",
+    "images": [
+      "https://eu.patagonia.com/dw/image/v2/BDJB_PRD/on/demandware.static/-/Sites-patagonia-master/default/dwb9f5e3ab/images/hi-res/25528_STH.jpg?sw=1400&sh=1400&sfrm=png&q=90&bgcolor=f3f4ef"
+    ],
+    "url": "https://eu.patagonia.com/gb/en/product/mens-better-sweater-fleece-jacket/25528.html",
+    "description": "The Better Sweater Fleece Jacket combines the aesthetic of a wool sweater with the performance of polyester fleece, made entirely from 100% recycled material. Its knit face and soft interior make it equally at home on a mountain trail or in a coffee shop, delivering everyday versatility with zero virgin plastic.",
+    "features": ["100% recycled polyester fleece", "Knit sweater-face exterior", "Soft interior", "Zippered pockets", "Fair Trade Certified", "Flat-seam construction"],
+    "highlights": "Patagonia's most versatile fleece: looks like a sweater, performs like technical fleece.",
+    "persona": "sustainability-first-buyer",
+    "useCase": "everyday-layering-commuting",
+    "keywords": ["better sweater fleece", "fleece jacket", "recycled fleece", "casual fleece", "everyday jacket", "patagonia fleece", "sustainable fleece", "midlayer fleece", "sweater jacket"]
+  },
+  {
+    "id": "mens-r1-air-crew",
+    "name": "Men's R1 Air Crew",
+    "category": "Fleece",
+    "price": 110,
+    "currency": "GBP",
+    "images": [
+      "https://eu.patagonia.com/dw/image/v2/BDJB_PRD/on/demandware.static/-/Sites-patagonia-master/default/dw2b1b1bca/images/hi-res/40235_BLK.jpg?sw=1400&sh=1400&sfrm=png&q=90&bgcolor=f3f4ef"
+    ],
+    "url": "https://eu.patagonia.com/gb/en/product/mens-r1-air-crew/40235.html",
+    "description": "The R1 Air Crew is Patagonia's most breathable midlayer, engineered for high-output activities where overheating is the enemy. Its open-knit Regulator fleece construction maximises airflow while trapping just enough warmth for moving fast in cool conditions. Made from recycled polyester.",
+    "features": ["Regulator fleece open-knit", "Maximum breathability", "100% recycled polyester", "Slim fit", "Flatlock seams", "Fair Trade Certified"],
+    "highlights": "Maximum breathability for high-output alpine activities.",
+    "persona": "alpine-performance-seeker",
+    "useCase": "multi-sport-versatility",
+    "keywords": ["R1 Air", "breathable midlayer", "regulator fleece", "climbing fleece", "technical fleece", "running midlayer", "high output fleece", "patagonia R1", "lightweight fleece"]
+  },
+  {
+    "id": "black-hole-duffel-55l",
+    "name": "Black Hole Duffel 55L",
+    "category": "Bags & Gear",
+    "price": 140,
+    "currency": "GBP",
+    "images": [
+      "https://eu.patagonia.com/dw/image/v2/BDJB_PRD/on/demandware.static/-/Sites-patagonia-master/default/dw6d4c7db3/images/hi-res/49343_BLK.jpg?sw=1400&sh=1400&sfrm=png&q=90&bgcolor=f3f4ef"
+    ],
+    "url": "https://eu.patagonia.com/gb/en/product/black-hole-duffel-bag-55-liters/49343.html",
+    "description": "The Black Hole Duffel 55L is a bomber travel bag built from 100% recycled polyester ripstop with a TPU-film laminate that shrugs off moisture and abuse. Convertible backpack straps, a U-shaped lid for easy access, and a lifetime guarantee make this the go-anywhere adventure duffel.",
+    "features": ["100% recycled polyester ripstop", "TPU-film laminate", "Convertible backpack straps", "U-shaped opening", "Padded base", "Lifetime guarantee"],
+    "highlights": "The original adventure duffel, now made entirely from recycled materials.",
+    "persona": "travel-adventure-minimalist",
+    "useCase": "travel-packing-light",
+    "keywords": ["black hole duffel", "travel bag", "adventure duffel", "recycled duffel bag", "patagonia duffel", "weekender bag", "expedition bag", "gym bag", "carry-on duffel"]
+  },
+  {
+    "id": "mens-down-sweater-jacket",
+    "name": "Men's Down Sweater Jacket",
+    "category": "Insulated Jackets",
+    "price": 220,
+    "currency": "GBP",
+    "images": [
+      "https://eu.patagonia.com/dw/image/v2/BDJB_PRD/on/demandware.static/-/Sites-patagonia-master/default/dw6c83d5a2/images/hi-res/84675_BLK.jpg?sw=1400&sh=1400&sfrm=png&q=90&bgcolor=f3f4ef"
+    ],
+    "url": "https://eu.patagonia.com/gb/en/product/mens-down-sweater-jacket/84675.html",
+    "description": "The Down Sweater Jacket wraps you in 800-fill-power Advanced Global Traceable Down insulation for exceptional warmth at minimal weight. The 100% recycled polyester shell resists wind and moisture while the quilted construction prevents down shifting. Packs into its own internal chest pocket for travel.",
+    "features": ["800-fill-power traceable down", "100% recycled polyester shell", "Windproof", "Packable", "Quilted construction", "Fair Trade Certified"],
+    "highlights": "Premium 800-fill traceable down for maximum warmth-to-weight ratio.",
+    "persona": "alpine-performance-seeker",
+    "useCase": "travel-packing-light",
+    "keywords": ["down jacket", "down sweater", "800 fill down", "lightweight down jacket", "packable down", "patagonia down sweater", "winter jacket", "cold weather jacket", "traceable down jacket"]
+  }
+]

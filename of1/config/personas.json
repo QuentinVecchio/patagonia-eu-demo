@@ -1,0 +1,34 @@
+[
+  {
+    "id": "alpine-performance-seeker",
+    "name": "Alpine Performance Seeker",
+    "description": "A dedicated mountaineer, rock climber, or alpine hiker who demands technical performance from their gear. They push into challenging conditions — exposed ridgelines, wet rock faces, and fast-changing mountain weather — and need equipment that performs reliably when it matters most.",
+    "keywords": ["climbing jacket", "alpine gear", "mountaineering layer", "technical jacket", "belaying warmth", "summit insulation", "crampon-compatible", "exposed conditions", "mountain performance", "high-altitude gear", "rock climbing layer", "via ferrata jacket"],
+    "priorities": ["Technical performance in extreme conditions", "Lightweight without sacrificing warmth", "Durability for seasons of hard use", "Helmet compatibility and mobility"],
+    "recommendedProducts": ["mens-nano-puff-jacket", "mens-nano-puff-hoody", "mens-r1-air-crew", "mens-down-sweater-jacket"]
+  },
+  {
+    "id": "everyday-outdoor-enthusiast",
+    "name": "Everyday Outdoor Enthusiast",
+    "description": "An active person who hikes, cycles, and walks regularly but values versatility over extreme specialisation. They want jackets that transition from the trail to town, keeping them comfortable on weekend hikes and weekday commutes alike.",
+    "keywords": ["hiking jacket", "walking jacket", "everyday outdoor jacket", "commuter jacket", "versatile jacket", "weekend hike", "dog walking coat", "casual outdoor", "pub to peak", "daily wear jacket", "all-rounder jacket", "comfortable outdoor layer"],
+    "priorities": ["Versatility across activities", "Comfort for extended wear", "Good value for the investment", "Stylish enough for casual settings"],
+    "recommendedProducts": ["mens-nano-puff-jacket", "womens-nano-puff-jacket", "mens-torrentshell-3l-jacket", "mens-better-sweater-fleece", "mens-nano-puff-vest"]
+  },
+  {
+    "id": "sustainability-first-buyer",
+    "name": "Sustainability-First Buyer",
+    "description": "A conscious consumer who prioritises environmental responsibility and ethical manufacturing above all else. They research supply chains, seek recycled materials, and support brands that align with their values. They would rather buy one excellent piece that lasts a decade than three mediocre ones.",
+    "keywords": ["sustainable jacket", "recycled materials jacket", "ethical clothing", "fair trade outdoor wear", "eco-friendly jacket", "responsible brand", "circular fashion", "repair culture", "buy less buy better", "environmental activism clothing", "carbon neutral gear", "planet-friendly outdoors"],
+    "priorities": ["Recycled and responsibly sourced materials", "Fair Trade Certified manufacturing", "Product longevity and repairability", "Brand environmental commitment"],
+    "recommendedProducts": ["mens-better-sweater-fleece", "womens-nano-puff-jacket", "mens-torrentshell-3l-jacket", "black-hole-duffel-55l"]
+  },
+  {
+    "id": "travel-adventure-minimalist",
+    "name": "Travel & Adventure Minimalist",
+    "description": "A frequent traveller and multi-sport athlete who needs gear that packs small, weighs nothing, and performs across multiple activities and climates. They might be bikepacking across Scotland, flying to the Alps, or running between meetings — one-bag living demands maximum versatility.",
+    "keywords": ["packable jacket", "travel jacket", "lightweight layer", "one-bag travel", "multi-sport jacket", "bikepacking gear", "carry-on packing", "ultralight travel", "adventure travel gear", "minimalist outdoor kit", "versatile travel layer", "airport to trail"],
+    "priorities": ["Packability and minimal weight", "Multi-climate versatility", "Quick-drying and easy care", "Adaptable to multiple activities"],
+    "recommendedProducts": ["mens-houdini-wind-jacket", "mens-nano-puff-jacket", "black-hole-duffel-55l", "mens-down-sweater-jacket"]
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "id": "nano-puff-warm-enough-winter",
+    "question": "Is the Nano Puff warm enough for winter?",
+    "answer": "The Nano Puff is designed as a midlayer or standalone jacket for active use in cool-to-cold conditions, roughly 0-10 degrees Celsius. For British winters with moderate activity (hiking, walking), it works well as a standalone piece on milder days or as an insulating layer under a waterproof shell on colder days. For static use in sub-zero temperatures or harsh winter storms, consider the Down Sweater for more warmth or layer the Nano Puff under a Torrentshell for wind and rain protection.",
+    "relatedProducts": ["mens-nano-puff-jacket", "womens-nano-puff-jacket", "mens-down-sweater-jacket"],
+    "category": "Product Performance"
+  },
+  {
+    "id": "nano-puff-vs-torrentshell",
+    "question": "What is the difference between the Nano Puff and the Torrentshell?",
+    "answer": "The Nano Puff and Torrentshell serve different purposes and work best together as a layering system. The Nano Puff is an insulated jacket that provides warmth through PrimaLoft synthetic insulation — it is water-resistant but not waterproof. The Torrentshell is a waterproof rain shell with no insulation — it blocks rain and wind but does not provide warmth on its own. For wet and cold conditions, wear the Nano Puff underneath the Torrentshell for complete protection.",
+    "relatedProducts": ["mens-nano-puff-jacket", "mens-torrentshell-3l-jacket"],
+    "category": "Product Comparison"
+  },
+  {
+    "id": "ironclad-guarantee-how-it-works",
+    "question": "How does Patagonia's Ironclad Guarantee work?",
+    "answer": "Patagonia guarantees every product for life against defects in materials and workmanship. If your product does not live up to expectations, you can return it to any Patagonia store or contact customer service for a repair, replacement, or refund. Patagonia will also repair damage from normal wear and tear at a reasonable charge, and their Worn Wear programme offers free DIY repair guides. This guarantee reflects their commitment to building products that last and keeping gear out of landfill.",
+    "relatedProducts": ["mens-nano-puff-jacket", "mens-torrentshell-3l-jacket", "mens-better-sweater-fleece"],
+    "category": "Brand & Service"
+  },
+  {
+    "id": "patagonia-sustainability-real",
+    "question": "Is Patagonia really sustainable?",
+    "answer": "Patagonia backs their environmental commitment with measurable action: they donate 1% of all sales to environmental organisations (over $140 million since 1985), use 100% renewable electricity in their US operations, and have committed to using only recycled or renewable materials. In 2022, founder Yvon Chouinard transferred ownership of the company to a trust dedicated to fighting the climate crisis. Their products use Fair Trade Certified labour, recycled materials, and PFAS-free water repellents. The Worn Wear programme extends product life through repair and resale.",
+    "relatedProducts": ["mens-better-sweater-fleece", "mens-nano-puff-jacket", "black-hole-duffel-55l"],
+    "category": "Brand & Values"
+  },
+  {
+    "id": "what-is-fair-trade-certified",
+    "question": "What does Fair Trade Certified mean for Patagonia products?",
+    "answer": "Fair Trade Certified means Patagonia pays a premium for every product made in certified factories, and that premium goes directly to the workers — not factory owners or management. Workers vote democratically on how to spend the funds, choosing between cash bonuses, community projects like childcare facilities, or services like healthcare. Patagonia is one of the largest apparel brands in the Fair Trade programme, with the majority of their products now carrying the certification.",
+    "relatedProducts": ["mens-nano-puff-jacket", "womens-nano-puff-jacket", "mens-torrentshell-3l-jacket"],
+    "category": "Brand & Values"
+  },
+  {
+    "id": "houdini-vs-torrentshell",
+    "question": "Should I get the Houdini or the Torrentshell?",
+    "answer": "It depends on the conditions you face most. The Houdini (100g, wind-resistant, light rain) is for fast-moving activities where wind protection and packability matter more than waterproofness — trail running, cycling, climbing approaches. The Torrentshell (400g, fully waterproof, breathable) is for sustained rain and all-day wet weather. If you live somewhere with regular heavy rain (Scotland, Wales, Alps), get the Torrentshell. If you mostly face wind and occasional showers during sport, the Houdini is the better choice. Many people own both.",
+    "relatedProducts": ["mens-houdini-wind-jacket", "mens-torrentshell-3l-jacket"],
+    "category": "Product Comparison"
+  },
+  {
+    "id": "pfas-free-what-it-means",
+    "question": "What does PFAS-free mean and why does it matter?",
+    "answer": "PFAS (per- and polyfluoroalkyl substances) are synthetic chemicals used in traditional DWR coatings that make jackets repel water. They are called forever chemicals because they never break down in the environment and have been found in drinking water, soil, and wildlife globally. Patagonia's PFAS-free DWR finishes achieve water repellency using alternative chemistries that do not persist in the environment. The Torrentshell 3L uses fabric, membrane, and DWR made entirely without intentionally added PFAS.",
+    "relatedProducts": ["mens-torrentshell-3l-jacket"],
+    "category": "Material Innovation"
+  },
+  {
+    "id": "nano-puff-vs-down-sweater",
+    "question": "Nano Puff or Down Sweater — which is warmer?",
+    "answer": "The Down Sweater is warmer. Its 800-fill-power traceable down delivers a higher warmth-to-weight ratio than the Nano Puff's 60g PrimaLoft synthetic insulation. However, the Nano Puff has a critical advantage: it stays warm when wet and dries much faster than down. For consistently wet British conditions, the Nano Puff is more practical. For cold, dry alpine environments or travel where maximum warmth at minimum weight matters, the Down Sweater excels. Both are packable and Fair Trade Certified.",
+    "relatedProducts": ["mens-nano-puff-jacket", "mens-down-sweater-jacket"],
+    "category": "Product Comparison"
+  },
+  {
+    "id": "worn-wear-programme",
+    "question": "How does the Worn Wear programme work?",
+    "answer": "Worn Wear is Patagonia's programme to keep products in use as long as possible. You can trade in used Patagonia gear for store credit, buy quality used Patagonia products at reduced prices, access free DIY repair guides and videos, or send items to Patagonia for professional repair (free for warranty issues, reasonable charge for wear-and-tear). The programme reflects Patagonia's belief that the most sustainable jacket is the one you already own — extending product life by even nine months reduces its carbon, water, and waste footprint by 20-30%.",
+    "relatedProducts": ["mens-nano-puff-jacket", "mens-torrentshell-3l-jacket", "mens-better-sweater-fleece"],
+    "category": "Brand & Service"
+  },
+  {
+    "id": "best-jacket-layering-system",
+    "question": "How do I build a layering system with Patagonia jackets?",
+    "answer": "A complete Patagonia layering system for British mountain conditions uses three layers: Base layer (Capilene Cool or Thermal Weight) wicks moisture from skin. Mid layer (Nano Puff or R1 Air) provides insulation and warmth. Shell layer (Torrentshell 3L) blocks wind and rain. For variable conditions, the Nano Puff doubles as a standalone jacket on dry days. In summer, swap the Nano Puff for a Houdini wind shell. This system lets you add or remove layers as exertion and weather change throughout the day.",
+    "relatedProducts": ["mens-nano-puff-jacket", "mens-torrentshell-3l-jacket", "mens-r1-air-crew", "mens-houdini-wind-jacket"],
+    "category": "Product Performance"
+  }
+]

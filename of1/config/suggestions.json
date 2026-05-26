@@ -1,0 +1,67 @@
+{
+  "title": "What gear question can we help with?",
+  "subtitle": "Ask about products, comparisons, or what works for your next adventure.",
+  "placeholder": "e.g. Best jacket for Scottish highlands in autumn",
+  "suggestions": [
+    {
+      "type": "explore",
+      "label": "Tell me about Nano Puff",
+      "query": "Tell me about the Nano Puff Jacket — warmth, packability, and what conditions it's best for"
+    },
+    {
+      "type": "explore",
+      "label": "How does Torrentshell perform?",
+      "query": "How does the Torrentshell 3L Rain Jacket perform in heavy rain and wind?"
+    },
+    {
+      "type": "explore",
+      "label": "What is Worn Wear?",
+      "query": "What is Patagonia's Worn Wear programme and how does repair work?"
+    },
+    {
+      "type": "explore",
+      "label": "Nano Puff vs Torrentshell",
+      "query": "Compare the Nano Puff Jacket and the Torrentshell 3L — when should I choose one over the other?"
+    },
+    {
+      "type": "explore",
+      "label": "Houdini vs Nano Puff",
+      "query": "Compare the Houdini Wind Jacket and Nano Puff for lightweight travel and hiking"
+    },
+    {
+      "type": "explore",
+      "label": "Best jacket for alpine climbing",
+      "query": "What's the best jacket for alpine climbing in cold, exposed conditions?"
+    },
+    {
+      "type": "explore",
+      "label": "Layering for wet UK hikes",
+      "query": "Recommend a layering system for wet and windy day hikes in the UK"
+    },
+    {
+      "type": "explore",
+      "label": "Packable gear for travel",
+      "query": "What are the most packable jackets and bags for minimalist travel?"
+    },
+    {
+      "type": "explore",
+      "label": "Show me midlayers",
+      "query": "Show me technical midlayers for cold-weather activities"
+    },
+    {
+      "type": "explore",
+      "label": "Fair Trade certified gear",
+      "query": "Which products are Fair Trade Certified and what does that mean?"
+    },
+    {
+      "type": "explore",
+      "label": "Jackets under £150",
+      "query": "What jackets do you have under £150 that work for everyday outdoor use?"
+    },
+    {
+      "type": "explore",
+      "label": "Best baselayer for running",
+      "query": "What's the best baselayer for trail running in cool weather?"
+    }
+  ]
+}

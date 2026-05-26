@@ -1,0 +1,42 @@
+[
+  {
+    "id": "alpine-hiking-climbing",
+    "name": "Alpine Hiking & Climbing",
+    "description": "Technical mountain pursuits from multi-pitch rock climbing to exposed ridge walks and alpine scrambles. Requires gear that provides warmth at belays, breathability during exertion, and protection from sudden weather changes at altitude.",
+    "keywords": ["climbing jacket", "alpine hiking gear", "mountain scrambling", "multi-pitch layer", "belay jacket", "summit push", "ridge walking", "exposed hiking", "scrambling insulation", "mountain midlayer"],
+    "recommendedProducts": ["mens-nano-puff-jacket", "mens-nano-puff-hoody", "mens-r1-air-crew", "mens-down-sweater-jacket"],
+    "relatedPersonas": ["alpine-performance-seeker"]
+  },
+  {
+    "id": "everyday-layering-commuting",
+    "name": "Everyday Layering & Commuting",
+    "description": "Daily use from cycling to work, walking the dog, weekend hikes, and everything in between. The jacket needs to handle British weather variability while looking presentable enough for a coffee stop or office arrival.",
+    "keywords": ["everyday jacket", "commuter jacket", "layering system", "dog walking jacket", "weekend hiking", "pub to peak", "office to outdoors", "school run jacket", "casual outdoor wear", "all-weather daily jacket"],
+    "recommendedProducts": ["mens-nano-puff-jacket", "womens-nano-puff-jacket", "mens-better-sweater-fleece", "mens-nano-puff-vest"],
+    "relatedPersonas": ["everyday-outdoor-enthusiast", "sustainability-first-buyer"]
+  },
+  {
+    "id": "multi-sport-versatility",
+    "name": "Multi-Sport Versatility",
+    "description": "Gear that crosses between trail running, cycling, climbing, and hiking without missing a beat. For athletes who switch activities daily and need layers that regulate temperature across varying intensities and conditions.",
+    "keywords": ["multi-sport jacket", "trail running layer", "cycling jacket", "running to climbing", "high output layer", "breathable active jacket", "cross-training outdoor", "interval sports", "mountain biking layer", "varied intensity gear"],
+    "recommendedProducts": ["mens-houdini-wind-jacket", "mens-r1-air-crew", "mens-nano-puff-vest", "womens-nano-puff-jacket"],
+    "relatedPersonas": ["alpine-performance-seeker", "travel-adventure-minimalist"]
+  },
+  {
+    "id": "travel-packing-light",
+    "name": "Travel & Packing Light",
+    "description": "Gear optimised for one-bag travel, bikepacking, backpacking trips, and adventures where every gram and cubic centimetre matters. Packability, weight, and versatility across climates are paramount.",
+    "keywords": ["travel jacket", "packable layer", "one bag travel", "backpacking gear", "lightweight travel", "bikepacking jacket", "carry-on jacket", "hostel to summit", "interrail outdoors", "gap year gear"],
+    "recommendedProducts": ["mens-houdini-wind-jacket", "mens-nano-puff-jacket", "mens-down-sweater-jacket", "black-hole-duffel-55l"],
+    "relatedPersonas": ["travel-adventure-minimalist"]
+  },
+  {
+    "id": "wet-weather-protection",
+    "name": "Wet Weather Protection",
+    "description": "Dedicated rain protection for British and European conditions where sustained rainfall is a given. Waterproof breathable shells that keep you dry all day without building up condensation, whether on a Highland hillwalk or a canal towpath commute.",
+    "keywords": ["rain jacket", "waterproof jacket", "wet weather gear", "British weather jacket", "all day rain protection", "hill walking waterproof", "breathable rain shell", "storm jacket", "monsoon protection", "soggy conditions gear"],
+    "recommendedProducts": ["mens-torrentshell-3l-jacket", "mens-houdini-wind-jacket"],
+    "relatedPersonas": ["everyday-outdoor-enthusiast", "alpine-performance-seeker"]
+  }
+]

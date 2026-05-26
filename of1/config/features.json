@@ -1,0 +1,51 @@
+[
+  {
+    "id": "primaloft-gold-insulation-eco",
+    "name": "PrimaLoft Gold Insulation Eco",
+    "description": "PrimaLoft Gold Insulation Eco is a high-performance synthetic insulation made from 100% postconsumer recycled polyester using P.U.R.E. (Produced Using Reduced Emissions) manufacturing technology. It delivers exceptional warmth even when wet, maintains loft after compression, and dries rapidly — outperforming down in damp conditions while using zero virgin materials.",
+    "productIds": ["mens-nano-puff-jacket", "womens-nano-puff-jacket", "mens-nano-puff-hoody", "mens-nano-puff-vest"],
+    "category": "Insulation Technology"
+  },
+  {
+    "id": "h2no-waterproof-breathable",
+    "name": "H2No Performance Standard Waterproofing",
+    "description": "Patagonia's H2No Performance Standard ensures exceptional waterproof and breathable protection through rigorous lab and field testing. The 3-layer construction bonds the face fabric, waterproof membrane, and liner into a single durable sheet that keeps rain out while allowing internal moisture to escape, providing all-day comfort in sustained rainfall.",
+    "productIds": ["mens-torrentshell-3l-jacket"],
+    "category": "Waterproof Technology"
+  },
+  {
+    "id": "fair-trade-certified",
+    "name": "Fair Trade Certified Manufacturing",
+    "description": "Patagonia's Fair Trade Certified programme ensures that workers in the factories making their products receive a premium paid directly to them for community development projects or personal use. Every Fair Trade purchase supports better wages, safer conditions, and worker empowerment in the supply chain.",
+    "productIds": ["mens-nano-puff-jacket", "womens-nano-puff-jacket", "mens-torrentshell-3l-jacket", "mens-houdini-wind-jacket", "mens-nano-puff-hoody", "mens-nano-puff-vest", "mens-better-sweater-fleece", "mens-r1-air-crew", "mens-down-sweater-jacket"],
+    "category": "Ethical Manufacturing"
+  },
+  {
+    "id": "ironclad-guarantee",
+    "name": "Ironclad Guarantee & Worn Wear",
+    "description": "Patagonia stands behind every product with an Ironclad Guarantee: if you are not satisfied or if the product does not perform to your satisfaction, return it for a repair, replacement, or refund. The Worn Wear programme extends product life through professional repairs, trade-ins, and resale of used gear — keeping quality products in use longer and out of landfill.",
+    "productIds": ["mens-nano-puff-jacket", "womens-nano-puff-jacket", "mens-torrentshell-3l-jacket", "mens-houdini-wind-jacket", "mens-better-sweater-fleece", "black-hole-duffel-55l"],
+    "category": "Brand Promise"
+  },
+  {
+    "id": "recycled-materials",
+    "name": "100% Recycled Materials",
+    "description": "Patagonia has committed to using 100% recycled or renewable materials across their product line. From recycled polyester shells and linings made from plastic bottles, to recycled nylon ripstop from fishing nets (NetPlus), every material choice reduces dependence on virgin petroleum and keeps waste out of ecosystems.",
+    "productIds": ["mens-nano-puff-jacket", "womens-nano-puff-jacket", "mens-torrentshell-3l-jacket", "mens-houdini-wind-jacket", "mens-better-sweater-fleece", "mens-r1-air-crew", "black-hole-duffel-55l"],
+    "category": "Sustainability"
+  },
+  {
+    "id": "pfas-free-dwr",
+    "name": "PFAS-Free DWR Finish",
+    "description": "Patagonia's latest generation of Durable Water Repellent (DWR) finishes are made without intentionally added PFAS (per- and polyfluoroalkyl substances) — persistent chemicals linked to environmental contamination. The PFAS-free DWR still causes water to bead and roll off the fabric surface, protecting you from light rain and spray without polluting waterways.",
+    "productIds": ["mens-torrentshell-3l-jacket", "mens-houdini-wind-jacket"],
+    "category": "Material Innovation"
+  },
+  {
+    "id": "800-fill-traceable-down",
+    "name": "800-Fill-Power Advanced Global Traceable Down",
+    "description": "Patagonia's 800-fill-power down is sourced through the Advanced Global Traceable Down Standard, ensuring every cluster can be traced from parent farm to finished product. The birds are never force-fed or live-plucked. This high-loft down delivers the best warmth-to-weight ratio available, ideal for cold alpine conditions where minimal pack weight is critical.",
+    "productIds": ["mens-down-sweater-jacket"],
+    "category": "Insulation Technology"
+  }
+]
