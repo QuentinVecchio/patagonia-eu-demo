@@ -215,7 +215,8 @@ main .section.dark { background: var(--color-dark); color: var(--color-white); }
 .hero-banner-wrapper,
 .split-banners-wrapper,
 .activism-wrapper,
-.promo-strip-wrapper {
+.promo-strip-wrapper,
+.of1-wrapper {
   max-width: 100% !important;
   padding: 0 !important;
 }
