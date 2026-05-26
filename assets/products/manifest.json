@@ -1,0 +1,102 @@
+[
+  {
+    "id": "mens-nano-puff-jacket",
+    "images": [
+      "/assets/products/mens-nano-puff-jacket/1.png",
+      "/assets/products/mens-nano-puff-jacket/2.png",
+      "/assets/products/mens-nano-puff-jacket/3.png",
+      "/assets/products/mens-nano-puff-jacket/4.png",
+      "/assets/products/mens-nano-puff-jacket/5.png"
+    ]
+  },
+  {
+    "id": "womens-nano-puff-jacket",
+    "images": [
+      "/assets/products/womens-nano-puff-jacket/1.png",
+      "/assets/products/womens-nano-puff-jacket/2.png",
+      "/assets/products/womens-nano-puff-jacket/3.png",
+      "/assets/products/womens-nano-puff-jacket/4.png",
+      "/assets/products/womens-nano-puff-jacket/5.png"
+    ]
+  },
+  {
+    "id": "mens-torrentshell-3l-jacket",
+    "images": [
+      "/assets/products/mens-torrentshell-3l-jacket/1.png",
+      "/assets/products/mens-torrentshell-3l-jacket/2.png",
+      "/assets/products/mens-torrentshell-3l-jacket/3.png",
+      "/assets/products/mens-torrentshell-3l-jacket/4.png",
+      "/assets/products/mens-torrentshell-3l-jacket/5.png"
+    ]
+  },
+  {
+    "id": "mens-houdini-wind-jacket",
+    "images": [
+      "/assets/products/mens-houdini-wind-jacket/1.png",
+      "/assets/products/mens-houdini-wind-jacket/2.png",
+      "/assets/products/mens-houdini-wind-jacket/3.png",
+      "/assets/products/mens-houdini-wind-jacket/4.png",
+      "/assets/products/mens-houdini-wind-jacket/5.png"
+    ]
+  },
+  {
+    "id": "mens-nano-puff-hoody",
+    "images": [
+      "/assets/products/mens-nano-puff-hoody/1.png",
+      "/assets/products/mens-nano-puff-hoody/2.png",
+      "/assets/products/mens-nano-puff-hoody/3.png",
+      "/assets/products/mens-nano-puff-hoody/4.png",
+      "/assets/products/mens-nano-puff-hoody/5.png"
+    ]
+  },
+  {
+    "id": "mens-nano-puff-vest",
+    "images": [
+      "/assets/products/mens-nano-puff-vest/1.png",
+      "/assets/products/mens-nano-puff-vest/2.png",
+      "/assets/products/mens-nano-puff-vest/3.png",
+      "/assets/products/mens-nano-puff-vest/4.png",
+      "/assets/products/mens-nano-puff-vest/5.png"
+    ]
+  },
+  {
+    "id": "mens-better-sweater-fleece",
+    "images": [
+      "/assets/products/mens-better-sweater-fleece/1.png",
+      "/assets/products/mens-better-sweater-fleece/2.png",
+      "/assets/products/mens-better-sweater-fleece/3.png",
+      "/assets/products/mens-better-sweater-fleece/4.png",
+      "/assets/products/mens-better-sweater-fleece/5.png"
+    ]
+  },
+  {
+    "id": "mens-r1-air-crew",
+    "images": [
+      "/assets/products/mens-r1-air-crew/1.png",
+      "/assets/products/mens-r1-air-crew/2.png",
+      "/assets/products/mens-r1-air-crew/3.png",
+      "/assets/products/mens-r1-air-crew/4.png",
+      "/assets/products/mens-r1-air-crew/5.png"
+    ]
+  },
+  {
+    "id": "black-hole-duffel-55l",
+    "images": [
+      "/assets/products/black-hole-duffel-55l/1.png",
+      "/assets/products/black-hole-duffel-55l/2.png",
+      "/assets/products/black-hole-duffel-55l/3.png",
+      "/assets/products/black-hole-duffel-55l/4.png",
+      "/assets/products/black-hole-duffel-55l/5.png"
+    ]
+  },
+  {
+    "id": "mens-down-sweater-jacket",
+    "images": [
+      "/assets/products/mens-down-sweater-jacket/1.png",
+      "/assets/products/mens-down-sweater-jacket/2.png",
+      "/assets/products/mens-down-sweater-jacket/3.png",
+      "/assets/products/mens-down-sweater-jacket/4.png",
+      "/assets/products/mens-down-sweater-jacket/5.png"
+    ]
+  }
+]
