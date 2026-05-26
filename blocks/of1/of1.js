@@ -106,14 +106,25 @@ function renderSuggestions(suggestions, config, block) {
   container.className = 'section generative-suggestions';
 
   const inner = document.createElement('div');
-  inner.innerHTML = `
-    <div class="suggestions-header"><span>Keep exploring</span></div>
-    <div class="suggestions-buttons"></div>
+  inner.className = 'suggestion-input-row';
+
+  // Search bar first
+  const customInput = document.createElement('div');
+  customInput.className = 'suggestion-custom';
+  customInput.innerHTML = `
+    <input type="text" class="suggestion-input" placeholder="Or ask your own question..." />
+    <button class="suggestion-submit" aria-label="Submit">${ARROW_SVG}</button>
   `;
-  container.appendChild(inner);
+  inner.appendChild(customInput);
 
-  const buttons = inner.querySelector('.suggestions-buttons');
+  // Then suggestion chips
+  const header = document.createElement('div');
+  header.className = 'suggestions-header';
+  header.innerHTML = '<span>Keep exploring</span>';
+  inner.appendChild(header);
 
+  const buttons = document.createElement('div');
+  buttons.className = 'suggestions-buttons';
   suggestions.forEach((sug) => {
     const btn = document.createElement('button');
     btn.className = 'suggestion-btn';
@@ -125,26 +136,18 @@ function renderSuggestions(suggestions, config, block) {
     });
     buttons.appendChild(btn);
   });
+  inner.appendChild(buttons);
 
-  const inputRow = document.createElement('div');
-  inputRow.className = 'suggestion-input-row';
-
-  const customInput = document.createElement('div');
-  customInput.className = 'suggestion-custom';
-  customInput.innerHTML = `
-    <input type="text" class="suggestion-input" placeholder="Or ask your own question..." />
-    <button class="suggestion-submit" aria-label="Submit">${ARROW_SVG}</button>
-  `;
-  inputRow.appendChild(customInput);
-
+  // Start over last
   const restartBtn = document.createElement('button');
   restartBtn.className = 'suggestion-restart';
   restartBtn.innerHTML = `${RESTART_SVG}<span>Start over</span>`;
   restartBtn.addEventListener('click', () => {
     window.location.href = window.location.pathname;
   });
-  inputRow.appendChild(restartBtn);
-  container.appendChild(inputRow);
+  inner.appendChild(restartBtn);
+
+  container.appendChild(inner);
 
   main.appendChild(container);
 
