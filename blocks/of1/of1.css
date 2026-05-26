@@ -86,15 +86,17 @@
   line-height: 1.05;
   letter-spacing: -0.02em;
   margin-bottom: 12px;
+  text-align: center;
 }
 
 .of1-subtitle {
   font-family: var(--font-body);
   font-size: 1.0625rem;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--text-secondary, #555555);
   margin-bottom: 40px;
   max-width: 520px;
   line-height: 1.55;
+  text-align: center;
 }
 
 /* ─── Input & Submit ──────────────────────────────────────── */
