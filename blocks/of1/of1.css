@@ -93,9 +93,10 @@
   font-family: var(--font-body);
   font-size: 1.0625rem;
   color: var(--text-secondary, #555555);
-  margin-bottom: 40px;
+  margin: 0 auto 40px;
   max-width: 520px;
   line-height: 1.55;
+  text-align: center;
   text-align: center;
 }
 
